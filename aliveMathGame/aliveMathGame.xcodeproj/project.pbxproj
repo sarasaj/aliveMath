@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7296DF21EBCE3DC00BA62AE /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7296DF11EBCE3DC00BA62AE /* ExplosionParticle.sks */; };
+		A7296DFA1EBED14F00BA62AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7296DF91EBED14F00BA62AE /* Assets.xcassets */; };
+		C600E39D1EBF0E9600C113F1 /* spacestone2.png in Resources */ = {isa = PBXBuildFile; fileRef = C600E39C1EBF0E9600C113F1 /* spacestone2.png */; };
+		C600E3A11EBF5FDD00C113F1 /* spacestation.png in Resources */ = {isa = PBXBuildFile; fileRef = C600E3A01EBF5FDC00C113F1 /* spacestation.png */; };
+		C600E3A31EBF779E00C113F1 /* bubble2.png in Resources */ = {isa = PBXBuildFile; fileRef = C600E3A21EBF779D00C113F1 /* bubble2.png */; };
+		C600E3AA1EBFD68900C113F1 /* nerdStudent.png in Resources */ = {isa = PBXBuildFile; fileRef = C600E3A81EBFD68700C113F1 /* nerdStudent.png */; };
+		C600E3AB1EBFD68B00C113F1 /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = C600E3A91EBFD68900C113F1 /* monster.png */; };
+		C600E3AD1EBFD7A400C113F1 /* lifeScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600E3AC1EBFD7A400C113F1 /* lifeScore.swift */; };
+		C600E3B11EC0024D00C113F1 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = C600E3B01EC0024C00C113F1 /* fire.png */; };
+		C62432591EC109160026AB9B /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C62432581EC109160026AB9B /* explosion.mp3 */; };
+		C624325B1EC109270026AB9B /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C624325A1EC109270026AB9B /* torpedo.mp3 */; };
+		C62C8A721EAFFDA200FCFA9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C8A711EAFFDA200FCFA9E /* AppDelegate.swift */; };
+		C62C8A781EAFFDA200FCFA9E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C8A771EAFFDA200FCFA9E /* GameScene.swift */; };
+		C62C8A7A1EAFFDA200FCFA9E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C8A791EAFFDA200FCFA9E /* GameViewController.swift */; };
+		C62C8A7D1EAFFDA200FCFA9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62C8A7B1EAFFDA200FCFA9E /* Main.storyboard */; };
+		C62C8A821EAFFDA200FCFA9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62C8A801EAFFDA200FCFA9E /* LaunchScreen.storyboard */; };
+		C62C8A8D1EAFFDA300FCFA9E /* aliveMathGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C8A8C1EAFFDA300FCFA9E /* aliveMathGameTests.swift */; };
+		C62C8A981EAFFDA300FCFA9E /* aliveMathGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C8A971EAFFDA300FCFA9E /* aliveMathGameUITests.swift */; };
+		C65410CA1EB7790A00391A5B /* stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65410C91EB7790A00391A5B /* stars.swift */; };
+		C69654C71EBE2557002561A0 /* spaceShip.png in Resources */ = {isa = PBXBuildFile; fileRef = C69654C61EBE2556002561A0 /* spaceShip.png */; };
+		C69654C91EBE5CE1002561A0 /* stones.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69654C81EBE5CDE002561A0 /* stones.swift */; };
+		C69654CB1EBE6269002561A0 /* monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69654CA1EBE6269002561A0 /* monster.swift */; };
+		C6A745241EB761390062021A /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A745211EB761390062021A /* spark.png */; };
+		C6AB2BD81EBBE96800B55488 /* finalLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AB2BD71EBBE96800B55488 /* finalLevel.swift */; };
+		C6AB2BDA1EBBEC4600B55488 /* startGameNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AB2BD91EBBEC4600B55488 /* startGameNode.swift */; };
+		C6B28E621EB78C3A004373C4 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B28E611EB78C3A004373C4 /* player.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C62C8A891EAFFDA300FCFA9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62C8A661EAFFDA100FCFA9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62C8A6D1EAFFDA200FCFA9E;
+			remoteInfo = aliveMathGame;
+		};
+		C62C8A941EAFFDA300FCFA9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C62C8A661EAFFDA100FCFA9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C62C8A6D1EAFFDA200FCFA9E;
+			remoteInfo = aliveMathGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7296DF11EBCE3DC00BA62AE /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionParticle.sks; sourceTree = "<group>"; };
+		A7296DF91EBED14F00BA62AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C600E39C1EBF0E9600C113F1 /* spacestone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spacestone2.png; sourceTree = "<group>"; };
+		C600E3A01EBF5FDC00C113F1 /* spacestation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spacestation.png; sourceTree = "<group>"; };
+		C600E3A21EBF779D00C113F1 /* bubble2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble2.png; sourceTree = "<group>"; };
+		C600E3A81EBFD68700C113F1 /* nerdStudent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nerdStudent.png; sourceTree = "<group>"; };
+		C600E3A91EBFD68900C113F1 /* monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster.png; sourceTree = "<group>"; };
+		C600E3AC1EBFD7A400C113F1 /* lifeScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = lifeScore.swift; path = ../lifeScore.swift; sourceTree = "<group>"; };
+		C600E3B01EC0024C00C113F1 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		C62432581EC109160026AB9B /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		C624325A1EC109270026AB9B /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		C62C8A6E1EAFFDA200FCFA9E /* aliveMathGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aliveMathGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62C8A711EAFFDA200FCFA9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C62C8A771EAFFDA200FCFA9E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C62C8A791EAFFDA200FCFA9E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C62C8A7C1EAFFDA200FCFA9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C62C8A811EAFFDA200FCFA9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C62C8A831EAFFDA200FCFA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62C8A881EAFFDA300FCFA9E /* aliveMathGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aliveMathGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62C8A8C1EAFFDA300FCFA9E /* aliveMathGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aliveMathGameTests.swift; sourceTree = "<group>"; };
+		C62C8A8E1EAFFDA300FCFA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C62C8A931EAFFDA300FCFA9E /* aliveMathGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aliveMathGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62C8A971EAFFDA300FCFA9E /* aliveMathGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aliveMathGameUITests.swift; sourceTree = "<group>"; };
+		C62C8A991EAFFDA300FCFA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C65410C91EB7790A00391A5B /* stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stars.swift; sourceTree = "<group>"; };
+		C69654C61EBE2556002561A0 /* spaceShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceShip.png; sourceTree = "<group>"; };
+		C69654C81EBE5CDE002561A0 /* stones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stones.swift; sourceTree = "<group>"; };
+		C69654CA1EBE6269002561A0 /* monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = monster.swift; sourceTree = "<group>"; };
+		C6A745211EB761390062021A /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		C6AB2BD71EBBE96800B55488 /* finalLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finalLevel.swift; sourceTree = "<group>"; };
+		C6AB2BD91EBBEC4600B55488 /* startGameNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startGameNode.swift; sourceTree = "<group>"; };
+		C6B28E611EB78C3A004373C4 /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C62C8A6B1EAFFDA200FCFA9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62C8A851EAFFDA300FCFA9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62C8A901EAFFDA300FCFA9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C624325C1EC109490026AB9B /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C62432581EC109160026AB9B /* explosion.mp3 */,
+				C624325A1EC109270026AB9B /* torpedo.mp3 */,
+			);
+			name = sounds;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C624325D1EC109660026AB9B /* backgroundObjects */ = {
+			isa = PBXGroup;
+			children = (
+				C65410C91EB7790A00391A5B /* stars.swift */,
+				C600E3AC1EBFD7A400C113F1 /* lifeScore.swift */,
+				C69654C81EBE5CDE002561A0 /* stones.swift */,
+				A7296DF11EBCE3DC00BA62AE /* ExplosionParticle.sks */,
+				C6AB2BD91EBBEC4600B55488 /* startGameNode.swift */,
+			);
+			name = backgroundObjects;
+			sourceTree = "<group>";
+		};
+		C624325E1EC109AB0026AB9B /* characters */ = {
+			isa = PBXGroup;
+			children = (
+				C6B28E611EB78C3A004373C4 /* player.swift */,
+				C69654CA1EBE6269002561A0 /* monster.swift */,
+			);
+			name = characters;
+			sourceTree = "<group>";
+		};
+		C624325F1EC109C10026AB9B /* gameScenes */ = {
+			isa = PBXGroup;
+			children = (
+				C62C8A771EAFFDA200FCFA9E /* GameScene.swift */,
+				C6AB2BD71EBBE96800B55488 /* finalLevel.swift */,
+			);
+			name = gameScenes;
+			sourceTree = "<group>";
+		};
+		C62C8A651EAFFDA100FCFA9E = {
+			isa = PBXGroup;
+			children = (
+				C62C8A701EAFFDA200FCFA9E /* aliveMathGame */,
+				C62C8A8B1EAFFDA300FCFA9E /* aliveMathGameTests */,
+				C62C8A961EAFFDA300FCFA9E /* aliveMathGameUITests */,
+				C62C8A6F1EAFFDA200FCFA9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C62C8A6F1EAFFDA200FCFA9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C62C8A6E1EAFFDA200FCFA9E /* aliveMathGame.app */,
+				C62C8A881EAFFDA300FCFA9E /* aliveMathGameTests.xctest */,
+				C62C8A931EAFFDA300FCFA9E /* aliveMathGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C62C8A701EAFFDA200FCFA9E /* aliveMathGame */ = {
+			isa = PBXGroup;
+			children = (
+				A7296DF91EBED14F00BA62AE /* Assets.xcassets */,
+				C62C8A711EAFFDA200FCFA9E /* AppDelegate.swift */,
+				C62C8A791EAFFDA200FCFA9E /* GameViewController.swift */,
+				C624325F1EC109C10026AB9B /* gameScenes */,
+				C624325E1EC109AB0026AB9B /* characters */,
+				C624325D1EC109660026AB9B /* backgroundObjects */,
+				C624325C1EC109490026AB9B /* sounds */,
+				C68039CB1EB6790A00D90ECF /* textures */,
+				C62C8A7B1EAFFDA200FCFA9E /* Main.storyboard */,
+				C62C8A801EAFFDA200FCFA9E /* LaunchScreen.storyboard */,
+				C62C8A831EAFFDA200FCFA9E /* Info.plist */,
+			);
+			path = aliveMathGame;
+			sourceTree = "<group>";
+		};
+		C62C8A8B1EAFFDA300FCFA9E /* aliveMathGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				C62C8A8C1EAFFDA300FCFA9E /* aliveMathGameTests.swift */,
+				C62C8A8E1EAFFDA300FCFA9E /* Info.plist */,
+			);
+			path = aliveMathGameTests;
+			sourceTree = "<group>";
+		};
+		C62C8A961EAFFDA300FCFA9E /* aliveMathGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C62C8A971EAFFDA300FCFA9E /* aliveMathGameUITests.swift */,
+				C62C8A991EAFFDA300FCFA9E /* Info.plist */,
+			);
+			path = aliveMathGameUITests;
+			sourceTree = "<group>";
+		};
+		C68039CB1EB6790A00D90ECF /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				C600E39C1EBF0E9600C113F1 /* spacestone2.png */,
+				C600E3A21EBF779D00C113F1 /* bubble2.png */,
+				C6A745211EB761390062021A /* spark.png */,
+				C600E3A81EBFD68700C113F1 /* nerdStudent.png */,
+				C600E3B01EC0024C00C113F1 /* fire.png */,
+				C600E3A91EBFD68900C113F1 /* monster.png */,
+				C600E3A01EBF5FDC00C113F1 /* spacestation.png */,
+				C69654C61EBE2556002561A0 /* spaceShip.png */,
+			);
+			name = textures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C62C8A6D1EAFFDA200FCFA9E /* aliveMathGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62C8A9C1EAFFDA300FCFA9E /* Build configuration list for PBXNativeTarget "aliveMathGame" */;
+			buildPhases = (
+				C62C8A6A1EAFFDA200FCFA9E /* Sources */,
+				C62C8A6B1EAFFDA200FCFA9E /* Frameworks */,
+				C62C8A6C1EAFFDA200FCFA9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aliveMathGame;
+			productName = aliveMathGame;
+			productReference = C62C8A6E1EAFFDA200FCFA9E /* aliveMathGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C62C8A871EAFFDA300FCFA9E /* aliveMathGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62C8A9F1EAFFDA300FCFA9E /* Build configuration list for PBXNativeTarget "aliveMathGameTests" */;
+			buildPhases = (
+				C62C8A841EAFFDA300FCFA9E /* Sources */,
+				C62C8A851EAFFDA300FCFA9E /* Frameworks */,
+				C62C8A861EAFFDA300FCFA9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C62C8A8A1EAFFDA300FCFA9E /* PBXTargetDependency */,
+			);
+			name = aliveMathGameTests;
+			productName = aliveMathGameTests;
+			productReference = C62C8A881EAFFDA300FCFA9E /* aliveMathGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C62C8A921EAFFDA300FCFA9E /* aliveMathGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C62C8AA21EAFFDA300FCFA9E /* Build configuration list for PBXNativeTarget "aliveMathGameUITests" */;
+			buildPhases = (
+				C62C8A8F1EAFFDA300FCFA9E /* Sources */,
+				C62C8A901EAFFDA300FCFA9E /* Frameworks */,
+				C62C8A911EAFFDA300FCFA9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C62C8A951EAFFDA300FCFA9E /* PBXTargetDependency */,
+			);
+			name = aliveMathGameUITests;
+			productName = aliveMathGameUITests;
+			productReference = C62C8A931EAFFDA300FCFA9E /* aliveMathGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C62C8A661EAFFDA100FCFA9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SMORE;
+				TargetAttributes = {
+					C62C8A6D1EAFFDA200FCFA9E = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 87F8UA72LP;
+						ProvisioningStyle = Automatic;
+					};
+					C62C8A871EAFFDA300FCFA9E = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C62C8A6D1EAFFDA200FCFA9E;
+					};
+					C62C8A921EAFFDA300FCFA9E = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C62C8A6D1EAFFDA200FCFA9E;
+					};
+				};
+			};
+			buildConfigurationList = C62C8A691EAFFDA100FCFA9E /* Build configuration list for PBXProject "aliveMathGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C62C8A651EAFFDA100FCFA9E;
+			productRefGroup = C62C8A6F1EAFFDA200FCFA9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C62C8A6D1EAFFDA200FCFA9E /* aliveMathGame */,
+				C62C8A871EAFFDA300FCFA9E /* aliveMathGameTests */,
+				C62C8A921EAFFDA300FCFA9E /* aliveMathGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C62C8A6C1EAFFDA200FCFA9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62C8A7D1EAFFDA200FCFA9E /* Main.storyboard in Resources */,
+				C600E3AA1EBFD68900C113F1 /* nerdStudent.png in Resources */,
+				C62C8A821EAFFDA200FCFA9E /* LaunchScreen.storyboard in Resources */,
+				C62432591EC109160026AB9B /* explosion.mp3 in Resources */,
+				C600E3B11EC0024D00C113F1 /* fire.png in Resources */,
+				C6A745241EB761390062021A /* spark.png in Resources */,
+				C600E3A11EBF5FDD00C113F1 /* spacestation.png in Resources */,
+				C69654C71EBE2557002561A0 /* spaceShip.png in Resources */,
+				C600E39D1EBF0E9600C113F1 /* spacestone2.png in Resources */,
+				C624325B1EC109270026AB9B /* torpedo.mp3 in Resources */,
+				A7296DFA1EBED14F00BA62AE /* Assets.xcassets in Resources */,
+				C600E3A31EBF779E00C113F1 /* bubble2.png in Resources */,
+				A7296DF21EBCE3DC00BA62AE /* ExplosionParticle.sks in Resources */,
+				C600E3AB1EBFD68B00C113F1 /* monster.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62C8A861EAFFDA300FCFA9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62C8A911EAFFDA300FCFA9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C62C8A6A1EAFFDA200FCFA9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62C8A781EAFFDA200FCFA9E /* GameScene.swift in Sources */,
+				C69654C91EBE5CE1002561A0 /* stones.swift in Sources */,
+				C600E3AD1EBFD7A400C113F1 /* lifeScore.swift in Sources */,
+				C69654CB1EBE6269002561A0 /* monster.swift in Sources */,
+				C6AB2BD81EBBE96800B55488 /* finalLevel.swift in Sources */,
+				C62C8A7A1EAFFDA200FCFA9E /* GameViewController.swift in Sources */,
+				C62C8A721EAFFDA200FCFA9E /* AppDelegate.swift in Sources */,
+				C6B28E621EB78C3A004373C4 /* player.swift in Sources */,
+				C6AB2BDA1EBBEC4600B55488 /* startGameNode.swift in Sources */,
+				C65410CA1EB7790A00391A5B /* stars.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62C8A841EAFFDA300FCFA9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62C8A8D1EAFFDA300FCFA9E /* aliveMathGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62C8A8F1EAFFDA300FCFA9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62C8A981EAFFDA300FCFA9E /* aliveMathGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C62C8A8A1EAFFDA300FCFA9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62C8A6D1EAFFDA200FCFA9E /* aliveMathGame */;
+			targetProxy = C62C8A891EAFFDA300FCFA9E /* PBXContainerItemProxy */;
+		};
+		C62C8A951EAFFDA300FCFA9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C62C8A6D1EAFFDA200FCFA9E /* aliveMathGame */;
+			targetProxy = C62C8A941EAFFDA300FCFA9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C62C8A7B1EAFFDA200FCFA9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62C8A7C1EAFFDA200FCFA9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C62C8A801EAFFDA200FCFA9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62C8A811EAFFDA200FCFA9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C62C8A9A1EAFFDA300FCFA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C62C8A9B1EAFFDA300FCFA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C62C8A9D1EAFFDA300FCFA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 87F8UA72LP;
+				INFOPLIST_FILE = aliveMathGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sa.edu.uqu.cis.aliveMathGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C62C8A9E1EAFFDA300FCFA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 87F8UA72LP;
+				INFOPLIST_FILE = aliveMathGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sa.edu.uqu.cis.aliveMathGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C62C8AA01EAFFDA300FCFA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = aliveMathGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sa.edu.uqu.cis.aliveMathGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aliveMathGame.app/aliveMathGame";
+			};
+			name = Debug;
+		};
+		C62C8AA11EAFFDA300FCFA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = aliveMathGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sa.edu.uqu.cis.aliveMathGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aliveMathGame.app/aliveMathGame";
+			};
+			name = Release;
+		};
+		C62C8AA31EAFFDA300FCFA9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = aliveMathGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sa.edu.uqu.cis.aliveMathGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = aliveMathGame;
+			};
+			name = Debug;
+		};
+		C62C8AA41EAFFDA300FCFA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = aliveMathGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sa.edu.uqu.cis.aliveMathGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = aliveMathGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C62C8A691EAFFDA100FCFA9E /* Build configuration list for PBXProject "aliveMathGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62C8A9A1EAFFDA300FCFA9E /* Debug */,
+				C62C8A9B1EAFFDA300FCFA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62C8A9C1EAFFDA300FCFA9E /* Build configuration list for PBXNativeTarget "aliveMathGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62C8A9D1EAFFDA300FCFA9E /* Debug */,
+				C62C8A9E1EAFFDA300FCFA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62C8A9F1EAFFDA300FCFA9E /* Build configuration list for PBXNativeTarget "aliveMathGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62C8AA01EAFFDA300FCFA9E /* Debug */,
+				C62C8AA11EAFFDA300FCFA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62C8AA21EAFFDA300FCFA9E /* Build configuration list for PBXNativeTarget "aliveMathGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62C8AA31EAFFDA300FCFA9E /* Debug */,
+				C62C8AA41EAFFDA300FCFA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C62C8A661EAFFDA100FCFA9E /* Project object */;
+}

@@ -1,0 +1,1344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9239E4601D8A5A7200CD2406 /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9239E4591D8A5A7200CD2406 /* libVuforia.a */; };
+		926096D41D4163B600510C24 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926096D31D4163B600510C24 /* SpriteKit.framework */; };
+		927B76D71D27FDC600C4F5CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B76D41D27FDC600C4F5CC /* AVFoundation.framework */; };
+		927B76D81D27FDC600C4F5CC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B76D51D27FDC600C4F5CC /* CoreMotion.framework */; };
+		927B76DB1D27FDE500C4F5CC /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B76D91D27FDE500C4F5CC /* SceneKit.framework */; };
+		927B76DC1D27FDE500C4F5CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B76DA1D27FDE500C4F5CC /* SystemConfiguration.framework */; };
+		927B76DE1D27FE0500C4F5CC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B76DD1D27FE0500C4F5CC /* CoreMedia.framework */; };
+		927B76EA1D2806EF00C4F5CC /* VuforiaEAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 927B76E51D2806EF00C4F5CC /* VuforiaEAGLView.mm */; };
+		927B76EB1D2806EF00C4F5CC /* VuforiaManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 927B76E71D2806EF00C4F5CC /* VuforiaManager.mm */; };
+		927B76EC1D2806EF00C4F5CC /* VuforiaObjects.mm in Sources */ = {isa = PBXBuildFile; fileRef = 927B76E91D2806EF00C4F5CC /* VuforiaObjects.mm */; };
+		927B76FD1D2816DB00C4F5CC /* VuforiaShaderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B76FC1D2816DB00C4F5CC /* VuforiaShaderUtils.m */; };
+		927B77081D2824AB00C4F5CC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B77071D2824AB00C4F5CC /* OpenGLES.framework */; };
+		927B77091D282DF100C4F5CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B76D31D27FDC600C4F5CC /* AudioToolbox.framework */; };
+		927B770B1D282E0A00C4F5CC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927B770A1D282E0A00C4F5CC /* MediaPlayer.framework */; };
+		92AA11091D27A5EB00E56CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA11081D27A5EB00E56CBE /* AppDelegate.swift */; };
+		92AA110B1D27A5EB00E56CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA110A1D27A5EB00E56CBE /* ViewController.swift */; };
+		92AA11101D27A5EB00E56CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AA110F1D27A5EB00E56CBE /* Assets.xcassets */; };
+		92AA11851D27B96300E56CBE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92AA11841D27B96300E56CBE /* Localizable.strings */; };
+		A7342CD31EC16AB9000A21BD /* SetUpRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7342CD21EC16AB9000A21BD /* SetUpRealm.swift */; };
+		A7640C371E826FD200F96302 /* addHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BDB1E826FD200F96302 /* addHomeworkViewController.swift */; };
+		A7640C381E826FD200F96302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7640BDC1E826FD200F96302 /* LaunchScreen.storyboard */; };
+		A7640C3A1E826FD200F96302 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE01E826FD200F96302 /* Course.swift */; };
+		A7640C3B1E826FD200F96302 /* CourseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE11E826FD200F96302 /* CourseObject.swift */; };
+		A7640C3C1E826FD200F96302 /* Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE21E826FD200F96302 /* Equation.swift */; };
+		A7640C3D1E826FD200F96302 /* EquationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE31E826FD200F96302 /* EquationObject.swift */; };
+		A7640C3F1E826FD200F96302 /* Exercies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE51E826FD200F96302 /* Exercies.swift */; };
+		A7640C401E826FD200F96302 /* ExerciseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE61E826FD200F96302 /* ExerciseObject.swift */; };
+		A7640C411E826FD200F96302 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE71E826FD200F96302 /* Group.swift */; };
+		A7640C421E826FD200F96302 /* GroupObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE81E826FD200F96302 /* GroupObject.swift */; };
+		A7640C431E826FD200F96302 /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BE91E826FD200F96302 /* Homework.swift */; };
+		A7640C441E826FD200F96302 /* HomeworkObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640BEA1E826FD200F96302 /* HomeworkObject.swift */; };
+		A7640C451E826FD200F96302 /* add hw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7640BEC1E826FD200F96302 /* add hw.jpg */; };
+		A7640C461E826FD200F96302 /* Back_previous_arrow_play_next_stop_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BED1E826FD200F96302 /* Back_previous_arrow_play_next_stop_pause.png */; };
+		A7640C471E826FD200F96302 /* badge-512.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BEE1E826FD200F96302 /* badge-512.png */; };
+		A7640C481E826FD200F96302 /* big-smile-smiley_icon-icons.com_57417.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BEF1E826FD200F96302 /* big-smile-smiley_icon-icons.com_57417.png */; };
+		A7640C491E826FD200F96302 /* capture.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF01E826FD200F96302 /* capture.png */; };
+		A7640C4A1E826FD200F96302 /* circle-512.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF11E826FD200F96302 /* circle-512.png */; };
+		A7640C4B1E826FD200F96302 /* class.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF21E826FD200F96302 /* class.png */; };
+		A7640C4C1E826FD200F96302 /* grade hw.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF31E826FD200F96302 /* grade hw.png */; };
+		A7640C4D1E826FD200F96302 /* heart-icon-14.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF41E826FD200F96302 /* heart-icon-14.png */; };
+		A7640C4E1E826FD200F96302 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF51E826FD200F96302 /* heart.png */; };
+		A7640C4F1E826FD200F96302 /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF61E826FD200F96302 /* icon-128.png */; };
+		A7640C501E826FD200F96302 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF71E826FD200F96302 /* images.jpeg */; };
+		A7640C511E826FD200F96302 /* key-icon-17.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF81E826FD200F96302 /* key-icon-17.png */; };
+		A7640C521E826FD200F96302 /* Logout-512.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BF91E826FD200F96302 /* Logout-512.png */; };
+		A7640C531E826FD200F96302 /* math in our life.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BFA1E826FD200F96302 /* math in our life.png */; };
+		A7640C541E826FD200F96302 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7640BFB1E826FD200F96302 /* Media.xcassets */; };
+		A7640C551E826FD200F96302 /* my classes.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BFC1E826FD200F96302 /* my classes.png */; };
+		A7640C561E826FD200F96302 /* save-download-icon-10.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BFD1E826FD200F96302 /* save-download-icon-10.png */; };
+		A7640C571E826FD200F96302 /* Settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BFE1E826FD200F96302 /* Settings-icon.png */; };
+		A7640C581E826FD200F96302 /* single student hw submission.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640BFF1E826FD200F96302 /* single student hw submission.png */; };
+		A7640C591E826FD200F96302 /* swipe left.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640C001E826FD200F96302 /* swipe left.png */; };
+		A7640C5A1E826FD200F96302 /* swipe right proofs .png in Resources */ = {isa = PBXBuildFile; fileRef = A7640C011E826FD200F96302 /* swipe right proofs .png */; };
+		A7640C5B1E826FD200F96302 /* switch to 2d.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640C021E826FD200F96302 /* switch to 2d.png */; };
+		A7640C5C1E826FD200F96302 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = A7640C041E826FD200F96302 /* image1.png */; };
+		A7640C5D1E826FD200F96302 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7640C051E826FD200F96302 /* Info.plist */; };
+		A7640C5F1E826FD200F96302 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C071E826FD200F96302 /* Lesson.swift */; };
+		A7640C601E826FD200F96302 /* LessonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C081E826FD200F96302 /* LessonObject.swift */; };
+		A7640C631E826FD200F96302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7640C0B1E826FD200F96302 /* Main.storyboard */; };
+		A7640C651E826FD200F96302 /* PlotObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C0D1E826FD200F96302 /* PlotObject.swift */; };
+		A7640C661E826FD200F96302 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C0E1E826FD200F96302 /* Profile.swift */; };
+		A7640C671E826FD200F96302 /* ProfileObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C0F1E826FD200F96302 /* ProfileObject.swift */; };
+		A7640C681E826FD200F96302 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C101E826FD200F96302 /* Progress.swift */; };
+		A7640C691E826FD200F96302 /* ProgressObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C111E826FD200F96302 /* ProgressObject.swift */; };
+		A7640C6A1E826FD200F96302 /* Proof.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C121E826FD200F96302 /* Proof.swift */; };
+		A7640C6B1E826FD200F96302 /* ProofObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C131E826FD200F96302 /* ProofObject.swift */; };
+		A7640C6C1E826FD200F96302 /* ProofsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C141E826FD200F96302 /* ProofsTableViewCell.swift */; };
+		A7640C6D1E826FD200F96302 /* ProofsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C151E826FD200F96302 /* ProofsViewController.swift */; };
+		A7640C6F1E826FD200F96302 /* RealLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C171E826FD200F96302 /* RealLife.swift */; };
+		A7640C701E826FD200F96302 /* RealLifeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C181E826FD200F96302 /* RealLifeObject.swift */; };
+		A7640C731E826FD200F96302 /* singleLessonMarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C1B1E826FD200F96302 /* singleLessonMarksTableViewCell.swift */; };
+		A7640C741E826FD200F96302 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C1C1E826FD200F96302 /* Solution.swift */; };
+		A7640C751E826FD200F96302 /* SolutionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C1D1E826FD200F96302 /* SolutionObject.swift */; };
+		A7640C761E826FD200F96302 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C1E1E826FD200F96302 /* Student.swift */; };
+		A7640C771E826FD200F96302 /* StudentLessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C1F1E826FD200F96302 /* StudentLessonsViewController.swift */; };
+		A7640C781E826FD200F96302 /* StudentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C201E826FD200F96302 /* StudentObjects.swift */; };
+		A7640C791E826FD200F96302 /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C211E826FD200F96302 /* StudentProfileViewController.swift */; };
+		A7640C7A1E826FD200F96302 /* StudentQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C221E826FD200F96302 /* StudentQuestionsViewController.swift */; };
+		A7640C7B1E826FD200F96302 /* StudentSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C231E826FD200F96302 /* StudentSettingsViewController.swift */; };
+		A7640C7C1E826FD200F96302 /* StudentSingleLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C241E826FD200F96302 /* StudentSingleLessonViewController.swift */; };
+		A7640C7D1E826FD200F96302 /* StudentSubmitHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C251E826FD200F96302 /* StudentSubmitHWViewController.swift */; };
+		A7640C7E1E826FD200F96302 /* StudnetLessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C261E826FD200F96302 /* StudnetLessonsTableViewCell.swift */; };
+		A7640C7F1E826FD200F96302 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C271E826FD200F96302 /* Teacher.swift */; };
+		A7640C811E826FD200F96302 /* TeacherGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C291E826FD200F96302 /* TeacherGroupsTableViewCell.swift */; };
+		A7640C821E826FD200F96302 /* TeacherGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C2A1E826FD200F96302 /* TeacherGroupsViewController.swift */; };
+		A7640C831E826FD200F96302 /* TeacherLessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C2B1E826FD200F96302 /* TeacherLessonsViewController.swift */; };
+		A7640C841E826FD200F96302 /* TeacherLessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C2C1E826FD200F96302 /* TeacherLessonTableViewCell.swift */; };
+		A7640C851E826FD200F96302 /* TeacherNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C2D1E826FD200F96302 /* TeacherNotesViewController.swift */; };
+		A7640C861E826FD200F96302 /* TeacherObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C2E1E826FD200F96302 /* TeacherObject.swift */; };
+		A7640C871E826FD200F96302 /* TeacherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C2F1E826FD200F96302 /* TeacherProfileViewController.swift */; };
+		A7640C881E826FD200F96302 /* TeacherSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C301E826FD200F96302 /* TeacherSettingViewController.swift */; };
+		A7640C891E826FD200F96302 /* TeacherSingleGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C311E826FD200F96302 /* TeacherSingleGroupViewController.swift */; };
+		A7640C8A1E826FD200F96302 /* teacherSingleLessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C321E826FD200F96302 /* teacherSingleLessonTableViewCell.swift */; };
+		A7640C8C1E826FD200F96302 /* TeacherSingleLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C341E826FD200F96302 /* TeacherSingleLessonViewController.swift */; };
+		A7640C8D1E826FD200F96302 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7640C351E826FD200F96302 /* VideoViewController.swift */; };
+		A7AB28081EC402B5003586CD /* launchscreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = A7AB28071EC402B5003586CD /* launchscreen.gif */; };
+		A7D1B7AC1EC7AB2B00237552 /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7D1B7AB1EC7AB2B00237552 /* ExplosionParticle.sks */; };
+		C62B2F0D1EABB41F00ECCD17 /* spacePopOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B2F0C1EABB41F00ECCD17 /* spacePopOver.swift */; };
+		C62B2F0F1EABB47000ECCD17 /* meshPopOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B2F0E1EABB46F00ECCD17 /* meshPopOver.swift */; };
+		C62B2F111EABB4B700ECCD17 /* spriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B2F101EABB4B700ECCD17 /* spriteNode.swift */; };
+		C62B2F131EABB4F800ECCD17 /* spriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62B2F121EABB4F800ECCD17 /* spriteScene.swift */; };
+		C646E9211E7F0BF500732815 /* moonTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = C646E9201E7F0BF500732815 /* moonTexture.png */; };
+		C646E9231E7F121700732815 /* earthTexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C646E9221E7F121700732815 /* earthTexture.jpg */; };
+		E821F6B11EAFCEC3003395B4 /* 8235.png in Resources */ = {isa = PBXBuildFile; fileRef = E821F6B01EAFCEC3003395B4 /* 8235.png */; };
+		E82E11B71E82A15A00989595 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82E11B61E82A15A00989595 /* ARViewController.swift */; };
+		E834DC1F1EABD5CD004A0EBA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E834DC1B1EABD5A5004A0EBA /* Realm.framework */; };
+		E834DC201EABD5CD004A0EBA /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E834DC1B1EABD5A5004A0EBA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E834DC211EABD5CD004A0EBA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E834DC1C1EABD5A5004A0EBA /* RealmSwift.framework */; };
+		E834DC221EABD5CD004A0EBA /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E834DC1C1EABD5A5004A0EBA /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E834DC241EAD4AAA004A0EBA /* StudentHWExerciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834DC231EAD4AAA004A0EBA /* StudentHWExerciesViewController.swift */; };
+		E846B7241EC230B600C47E07 /* sceneSetUp2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7231EC230B600C47E07 /* sceneSetUp2D.swift */; };
+		E846B7261EC230DA00C47E07 /* meshGeometry2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7251EC230DA00C47E07 /* meshGeometry2D.swift */; };
+		E846B7281EC2313400C47E07 /* vectorsPopOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7271EC2313400C47E07 /* vectorsPopOver.swift */; };
+		E846B72A1EC2316D00C47E07 /* orbiting2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7291EC2316D00C47E07 /* orbiting2D.swift */; };
+		E846B72C1EC2319600C47E07 /* drawline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B72B1EC2319600C47E07 /* drawline.swift */; };
+		E846B72E1EC231AE00C47E07 /* vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B72D1EC231AE00C47E07 /* vector.swift */; };
+		E846B7301EC231C800C47E07 /* vectors2d.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B72F1EC231C800C47E07 /* vectors2d.swift */; };
+		E846B76D1EC23EA800C47E07 /* bubble2.png in Resources */ = {isa = PBXBuildFile; fileRef = E846B73B1EC23EA800C47E07 /* bubble2.png */; };
+		E846B76E1EC23EA800C47E07 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E846B73C1EC23EA800C47E07 /* explosion.mp3 */; };
+		E846B76F1EC23EA800C47E07 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E846B73D1EC23EA800C47E07 /* Explosion.sks */; };
+		E846B7711EC23EA800C47E07 /* finalLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B73F1EC23EA800C47E07 /* finalLevel.swift */; };
+		E846B7721EC23EA800C47E07 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E846B7401EC23EA800C47E07 /* fire.png */; };
+		E846B7741EC23EA800C47E07 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7421EC23EA800C47E07 /* GameScene.swift */; };
+		E846B7751EC23EA800C47E07 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7431EC23EA800C47E07 /* GameViewController.swift */; };
+		E846B7761EC23EA800C47E07 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E846B7441EC23EA800C47E07 /* Info.plist */; };
+		E846B7771EC23EA800C47E07 /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = E846B7451EC23EA800C47E07 /* monster.png */; };
+		E846B7781EC23EA800C47E07 /* monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7461EC23EA800C47E07 /* monster.swift */; };
+		E846B77A1EC23EA800C47E07 /* nerdStudent.png in Resources */ = {isa = PBXBuildFile; fileRef = E846B7481EC23EA800C47E07 /* nerdStudent.png */; };
+		E846B77B1EC23EA800C47E07 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7491EC23EA800C47E07 /* player.swift */; };
+		E846B77C1EC23EA800C47E07 /* spaceShip.png in Resources */ = {isa = PBXBuildFile; fileRef = E846B74A1EC23EA800C47E07 /* spaceShip.png */; };
+		E846B77D1EC23EA800C47E07 /* spacestation.png in Resources */ = {isa = PBXBuildFile; fileRef = E846B74B1EC23EA800C47E07 /* spacestation.png */; };
+		E846B77E1EC23EA800C47E07 /* spacestone2.png in Resources */ = {isa = PBXBuildFile; fileRef = E846B74C1EC23EA800C47E07 /* spacestone2.png */; };
+		E846B77F1EC23EA800C47E07 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E846B74D1EC23EA800C47E07 /* spark.png */; };
+		E846B7811EC23EA800C47E07 /* stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B74F1EC23EA800C47E07 /* stars.swift */; };
+		E846B7821EC23EA800C47E07 /* startGameNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7501EC23EA800C47E07 /* startGameNode.swift */; };
+		E846B7831EC23EA800C47E07 /* stones.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7511EC23EA800C47E07 /* stones.swift */; };
+		E846B7841EC23EA800C47E07 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E846B7521EC23EA800C47E07 /* torpedo.mp3 */; };
+		E846B7851EC23EA800C47E07 /* aliveMathGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7571EC23EA800C47E07 /* aliveMathGameTests.swift */; };
+		E846B7861EC23EA800C47E07 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E846B7581EC23EA800C47E07 /* Info.plist */; };
+		E846B78F1EC23EA800C47E07 /* lifeScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E846B7621EC23EA800C47E07 /* lifeScore.swift */; };
+		E867E08F1E9B7DD800C07C79 /* space.swift in Sources */ = {isa = PBXBuildFile; fileRef = E867E08C1E9B7DD700C07C79 /* space.swift */; };
+		E867E0901E9B7DD800C07C79 /* sceneSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E867E08D1E9B7DD700C07C79 /* sceneSetUp.swift */; };
+		E867E0911E9B7DD800C07C79 /* meshGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E867E08E1E9B7DD800C07C79 /* meshGeometry.swift */; };
+		E8C02A391EC774B800C45545 /* aliveMathDemo.dat in Resources */ = {isa = PBXBuildFile; fileRef = E8C02A371EC774B800C45545 /* aliveMathDemo.dat */; };
+		E8C02A3A1EC774B800C45545 /* aliveMathDemo.xml in Resources */ = {isa = PBXBuildFile; fileRef = E8C02A381EC774B800C45545 /* aliveMathDemo.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E82E11B41E82854100989595 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E834DC221EABD5CD004A0EBA /* RealmSwift.framework in Embed Frameworks */,
+				E834DC201EABD5CD004A0EBA /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9239E3FF1D8A5A7200CD2406 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
+		9239E4001D8A5A7200CD2406 /* Box3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box3D.h; sourceTree = "<group>"; };
+		9239E4011D8A5A7200CD2406 /* CameraCalibration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCalibration.h; sourceTree = "<group>"; };
+		9239E4021D8A5A7200CD2406 /* CameraDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraDevice.h; sourceTree = "<group>"; };
+		9239E4031D8A5A7200CD2406 /* CameraField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraField.h; sourceTree = "<group>"; };
+		9239E4041D8A5A7200CD2406 /* CustomViewerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewerParameters.h; sourceTree = "<group>"; };
+		9239E4051D8A5A7200CD2406 /* CylinderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CylinderTarget.h; sourceTree = "<group>"; };
+		9239E4061D8A5A7200CD2406 /* CylinderTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CylinderTargetResult.h; sourceTree = "<group>"; };
+		9239E4071D8A5A7200CD2406 /* DataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSet.h; sourceTree = "<group>"; };
+		9239E4081D8A5A7200CD2406 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		9239E4091D8A5A7200CD2406 /* DeviceTrackable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTrackable.h; sourceTree = "<group>"; };
+		9239E40A1D8A5A7200CD2406 /* DeviceTrackableResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTrackableResult.h; sourceTree = "<group>"; };
+		9239E40B1D8A5A7200CD2406 /* DeviceTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTracker.h; sourceTree = "<group>"; };
+		9239E40C1D8A5A7200CD2406 /* EyeID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeID.h; sourceTree = "<group>"; };
+		9239E40D1D8A5A7200CD2406 /* EyewearCalibrationProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyewearCalibrationProfileManager.h; sourceTree = "<group>"; };
+		9239E40E1D8A5A7200CD2406 /* EyewearCalibrationReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyewearCalibrationReading.h; sourceTree = "<group>"; };
+		9239E40F1D8A5A7200CD2406 /* EyewearDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyewearDevice.h; sourceTree = "<group>"; };
+		9239E4101D8A5A7200CD2406 /* EyewearUserCalibrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyewearUserCalibrator.h; sourceTree = "<group>"; };
+		9239E4111D8A5A7200CD2406 /* Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frame.h; sourceTree = "<group>"; };
+		9239E4121D8A5A7200CD2406 /* GLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderer.h; sourceTree = "<group>"; };
+		9239E4131D8A5A7200CD2406 /* HandheldTransformModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandheldTransformModel.h; sourceTree = "<group>"; };
+		9239E4141D8A5A7200CD2406 /* HeadTransformModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadTransformModel.h; sourceTree = "<group>"; };
+		9239E4151D8A5A7200CD2406 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		9239E4161D8A5A7200CD2406 /* ImageTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTarget.h; sourceTree = "<group>"; };
+		9239E4171D8A5A7200CD2406 /* ImageTargetBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTargetBuilder.h; sourceTree = "<group>"; };
+		9239E4181D8A5A7200CD2406 /* ImageTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTargetResult.h; sourceTree = "<group>"; };
+		9239E4191D8A5A7200CD2406 /* InstanceId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstanceId.h; sourceTree = "<group>"; };
+		9239E41A1D8A5A7200CD2406 /* Marker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Marker.h; sourceTree = "<group>"; };
+		9239E41B1D8A5A7200CD2406 /* MarkerResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerResult.h; sourceTree = "<group>"; };
+		9239E41C1D8A5A7200CD2406 /* MarkerTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerTracker.h; sourceTree = "<group>"; };
+		9239E41D1D8A5A7200CD2406 /* Matrices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrices.h; sourceTree = "<group>"; };
+		9239E41E1D8A5A7200CD2406 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		9239E41F1D8A5A7200CD2406 /* MetalRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalRenderer.h; sourceTree = "<group>"; };
+		9239E4201D8A5A7200CD2406 /* MultiTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTarget.h; sourceTree = "<group>"; };
+		9239E4211D8A5A7200CD2406 /* MultiTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTargetResult.h; sourceTree = "<group>"; };
+		9239E4221D8A5A7200CD2406 /* NonCopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonCopyable.h; sourceTree = "<group>"; };
+		9239E4231D8A5A7200CD2406 /* Obb2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obb2D.h; sourceTree = "<group>"; };
+		9239E4241D8A5A7200CD2406 /* Obb3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obb3D.h; sourceTree = "<group>"; };
+		9239E4251D8A5A7200CD2406 /* ObjectTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectTarget.h; sourceTree = "<group>"; };
+		9239E4261D8A5A7200CD2406 /* ObjectTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectTargetResult.h; sourceTree = "<group>"; };
+		9239E4271D8A5A7200CD2406 /* ObjectTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectTracker.h; sourceTree = "<group>"; };
+		9239E4281D8A5A7200CD2406 /* Prop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prop.h; sourceTree = "<group>"; };
+		9239E4291D8A5A7200CD2406 /* PropResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropResult.h; sourceTree = "<group>"; };
+		9239E42A1D8A5A7200CD2406 /* Reconstruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reconstruction.h; sourceTree = "<group>"; };
+		9239E42B1D8A5A7200CD2406 /* ReconstructionFromTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReconstructionFromTarget.h; sourceTree = "<group>"; };
+		9239E42C1D8A5A7200CD2406 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		9239E42D1D8A5A7200CD2406 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		9239E42E1D8A5A7200CD2406 /* RenderingPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingPrimitives.h; sourceTree = "<group>"; };
+		9239E42F1D8A5A7200CD2406 /* RotationalDeviceTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationalDeviceTracker.h; sourceTree = "<group>"; };
+		9239E4301D8A5A7200CD2406 /* SmartTerrainBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartTerrainBuilder.h; sourceTree = "<group>"; };
+		9239E4311D8A5A7200CD2406 /* SmartTerrainTrackable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartTerrainTrackable.h; sourceTree = "<group>"; };
+		9239E4321D8A5A7200CD2406 /* SmartTerrainTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartTerrainTracker.h; sourceTree = "<group>"; };
+		9239E4331D8A5A7200CD2406 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		9239E4341D8A5A7200CD2406 /* StateUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateUpdater.h; sourceTree = "<group>"; };
+		9239E4351D8A5A7200CD2406 /* Surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surface.h; sourceTree = "<group>"; };
+		9239E4361D8A5A7200CD2406 /* SurfaceResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurfaceResult.h; sourceTree = "<group>"; };
+		9239E4371D8A5A7200CD2406 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = System.h; sourceTree = "<group>"; };
+		9239E4381D8A5A7200CD2406 /* TargetFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetFinder.h; sourceTree = "<group>"; };
+		9239E4391D8A5A7200CD2406 /* TargetSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetSearchResult.h; sourceTree = "<group>"; };
+		9239E43A1D8A5A7200CD2406 /* TextTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTracker.h; sourceTree = "<group>"; };
+		9239E43B1D8A5A7200CD2406 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		9239E43C1D8A5A7200CD2406 /* Trackable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trackable.h; sourceTree = "<group>"; };
+		9239E43D1D8A5A7200CD2406 /* TrackableResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackableResult.h; sourceTree = "<group>"; };
+		9239E43E1D8A5A7200CD2406 /* TrackableSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackableSource.h; sourceTree = "<group>"; };
+		9239E43F1D8A5A7200CD2406 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		9239E4401D8A5A7200CD2406 /* TrackerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerManager.h; sourceTree = "<group>"; };
+		9239E4411D8A5A7200CD2406 /* TransformModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformModel.h; sourceTree = "<group>"; };
+		9239E4421D8A5A7200CD2406 /* Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type.h; sourceTree = "<group>"; };
+		9239E4431D8A5A7200CD2406 /* UIGLViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGLViewProtocol.h; sourceTree = "<group>"; };
+		9239E4441D8A5A7200CD2406 /* UpdateCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateCallback.h; sourceTree = "<group>"; };
+		9239E4451D8A5A7200CD2406 /* Vectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vectors.h; sourceTree = "<group>"; };
+		9239E4461D8A5A7200CD2406 /* VideoBackgroundConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBackgroundConfig.h; sourceTree = "<group>"; };
+		9239E4471D8A5A7200CD2406 /* VideoBackgroundTextureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoBackgroundTextureInfo.h; sourceTree = "<group>"; };
+		9239E4481D8A5A7200CD2406 /* VideoMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMode.h; sourceTree = "<group>"; };
+		9239E4491D8A5A7200CD2406 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		9239E44A1D8A5A7200CD2406 /* ViewerParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerParameters.h; sourceTree = "<group>"; };
+		9239E44B1D8A5A7200CD2406 /* ViewerParametersList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerParametersList.h; sourceTree = "<group>"; };
+		9239E44C1D8A5A7200CD2406 /* ViewList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewList.h; sourceTree = "<group>"; };
+		9239E44D1D8A5A7200CD2406 /* VirtualButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualButton.h; sourceTree = "<group>"; };
+		9239E44E1D8A5A7200CD2406 /* VirtualButtonResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualButtonResult.h; sourceTree = "<group>"; };
+		9239E44F1D8A5A7200CD2406 /* Vuforia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vuforia.h; sourceTree = "<group>"; };
+		9239E4501D8A5A7200CD2406 /* Vuforia_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vuforia_iOS.h; sourceTree = "<group>"; };
+		9239E4511D8A5A7200CD2406 /* VuMarkTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuMarkTarget.h; sourceTree = "<group>"; };
+		9239E4521D8A5A7200CD2406 /* VuMarkTargetResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuMarkTargetResult.h; sourceTree = "<group>"; };
+		9239E4531D8A5A7200CD2406 /* VuMarkTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VuMarkTemplate.h; sourceTree = "<group>"; };
+		9239E4541D8A5A7200CD2406 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		9239E4551D8A5A7200CD2406 /* WordList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordList.h; sourceTree = "<group>"; };
+		9239E4561D8A5A7200CD2406 /* WordResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordResult.h; sourceTree = "<group>"; };
+		9239E4591D8A5A7200CD2406 /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVuforia.a; sourceTree = "<group>"; };
+		926096D31D4163B600510C24 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		927B76D31D27FDC600C4F5CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		927B76D41D27FDC600C4F5CC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		927B76D51D27FDC600C4F5CC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		927B76D91D27FDE500C4F5CC /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		927B76DA1D27FDE500C4F5CC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		927B76DD1D27FE0500C4F5CC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		927B76E41D2806EF00C4F5CC /* VuforiaEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VuforiaEAGLView.h; path = VuforiaManager/VuforiaEAGLView.h; sourceTree = "<group>"; };
+		927B76E51D2806EF00C4F5CC /* VuforiaEAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VuforiaEAGLView.mm; path = VuforiaManager/VuforiaEAGLView.mm; sourceTree = "<group>"; };
+		927B76E61D2806EF00C4F5CC /* VuforiaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VuforiaManager.h; path = VuforiaManager/VuforiaManager.h; sourceTree = "<group>"; };
+		927B76E71D2806EF00C4F5CC /* VuforiaManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VuforiaManager.mm; path = VuforiaManager/VuforiaManager.mm; sourceTree = "<group>"; };
+		927B76E81D2806EF00C4F5CC /* VuforiaObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VuforiaObjects.h; path = VuforiaManager/VuforiaObjects.h; sourceTree = "<group>"; };
+		927B76E91D2806EF00C4F5CC /* VuforiaObjects.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VuforiaObjects.mm; path = VuforiaManager/VuforiaObjects.mm; sourceTree = "<group>"; };
+		927B76FB1D2816DB00C4F5CC /* VuforiaShaderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VuforiaShaderUtils.h; path = VuforiaManager/VuforiaShaderUtils.h; sourceTree = "<group>"; };
+		927B76FC1D2816DB00C4F5CC /* VuforiaShaderUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VuforiaShaderUtils.m; path = VuforiaManager/VuforiaShaderUtils.m; sourceTree = "<group>"; };
+		927B77071D2824AB00C4F5CC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		927B770A1D282E0A00C4F5CC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		92AA11051D27A5EB00E56CBE /* VuforiaSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VuforiaSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AA11081D27A5EB00E56CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = VuforiaSampleSwift/AppDelegate.swift; sourceTree = "<group>"; };
+		92AA110A1D27A5EB00E56CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = VuforiaSampleSwift/ViewController.swift; sourceTree = "<group>"; };
+		92AA110F1D27A5EB00E56CBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = VuforiaSampleSwift/Assets.xcassets; sourceTree = "<group>"; };
+		92AA11141D27A5EB00E56CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AA11841D27B96300E56CBE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A7342CD21EC16AB9000A21BD /* SetUpRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpRealm.swift; sourceTree = "<group>"; };
+		A7640BDB1E826FD200F96302 /* addHomeworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addHomeworkViewController.swift; sourceTree = "<group>"; };
+		A7640BDD1E826FD200F96302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7640BE01E826FD200F96302 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		A7640BE11E826FD200F96302 /* CourseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseObject.swift; sourceTree = "<group>"; };
+		A7640BE21E826FD200F96302 /* Equation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equation.swift; sourceTree = "<group>"; };
+		A7640BE31E826FD200F96302 /* EquationObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationObject.swift; sourceTree = "<group>"; };
+		A7640BE51E826FD200F96302 /* Exercies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercies.swift; sourceTree = "<group>"; };
+		A7640BE61E826FD200F96302 /* ExerciseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseObject.swift; sourceTree = "<group>"; };
+		A7640BE71E826FD200F96302 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		A7640BE81E826FD200F96302 /* GroupObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupObject.swift; sourceTree = "<group>"; };
+		A7640BE91E826FD200F96302 /* Homework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
+		A7640BEA1E826FD200F96302 /* HomeworkObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeworkObject.swift; sourceTree = "<group>"; };
+		A7640BEC1E826FD200F96302 /* add hw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "add hw.jpg"; sourceTree = "<group>"; };
+		A7640BED1E826FD200F96302 /* Back_previous_arrow_play_next_stop_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back_previous_arrow_play_next_stop_pause.png; sourceTree = "<group>"; };
+		A7640BEE1E826FD200F96302 /* badge-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge-512.png"; sourceTree = "<group>"; };
+		A7640BEF1E826FD200F96302 /* big-smile-smiley_icon-icons.com_57417.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big-smile-smiley_icon-icons.com_57417.png"; sourceTree = "<group>"; };
+		A7640BF01E826FD200F96302 /* capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capture.png; sourceTree = "<group>"; };
+		A7640BF11E826FD200F96302 /* circle-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-512.png"; sourceTree = "<group>"; };
+		A7640BF21E826FD200F96302 /* class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class.png; sourceTree = "<group>"; };
+		A7640BF31E826FD200F96302 /* grade hw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grade hw.png"; sourceTree = "<group>"; };
+		A7640BF41E826FD200F96302 /* heart-icon-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-icon-14.png"; sourceTree = "<group>"; };
+		A7640BF51E826FD200F96302 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		A7640BF61E826FD200F96302 /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-128.png"; sourceTree = "<group>"; };
+		A7640BF71E826FD200F96302 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		A7640BF81E826FD200F96302 /* key-icon-17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-icon-17.png"; sourceTree = "<group>"; };
+		A7640BF91E826FD200F96302 /* Logout-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logout-512.png"; sourceTree = "<group>"; };
+		A7640BFA1E826FD200F96302 /* math in our life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "math in our life.png"; sourceTree = "<group>"; };
+		A7640BFB1E826FD200F96302 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A7640BFC1E826FD200F96302 /* my classes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my classes.png"; sourceTree = "<group>"; };
+		A7640BFD1E826FD200F96302 /* save-download-icon-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save-download-icon-10.png"; sourceTree = "<group>"; };
+		A7640BFE1E826FD200F96302 /* Settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-icon.png"; sourceTree = "<group>"; };
+		A7640BFF1E826FD200F96302 /* single student hw submission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "single student hw submission.png"; sourceTree = "<group>"; };
+		A7640C001E826FD200F96302 /* swipe left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe left.png"; sourceTree = "<group>"; };
+		A7640C011E826FD200F96302 /* swipe right proofs .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe right proofs .png"; sourceTree = "<group>"; };
+		A7640C021E826FD200F96302 /* switch to 2d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch to 2d.png"; sourceTree = "<group>"; };
+		A7640C041E826FD200F96302 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image1.png; path = ../Images/image1.png; sourceTree = "<group>"; };
+		A7640C051E826FD200F96302 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Learning 2/Learning/Info.plist"; sourceTree = "<group>"; };
+		A7640C071E826FD200F96302 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		A7640C081E826FD200F96302 /* LessonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonObject.swift; sourceTree = "<group>"; };
+		A7640C0B1E826FD200F96302 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Learning 2/Learning/Main.storyboard"; sourceTree = "<group>"; };
+		A7640C0D1E826FD200F96302 /* PlotObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotObject.swift; sourceTree = "<group>"; };
+		A7640C0E1E826FD200F96302 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		A7640C0F1E826FD200F96302 /* ProfileObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileObject.swift; sourceTree = "<group>"; };
+		A7640C101E826FD200F96302 /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		A7640C111E826FD200F96302 /* ProgressObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressObject.swift; sourceTree = "<group>"; };
+		A7640C121E826FD200F96302 /* Proof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proof.swift; sourceTree = "<group>"; };
+		A7640C131E826FD200F96302 /* ProofObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProofObject.swift; sourceTree = "<group>"; };
+		A7640C141E826FD200F96302 /* ProofsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProofsTableViewCell.swift; sourceTree = "<group>"; };
+		A7640C151E826FD200F96302 /* ProofsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProofsViewController.swift; sourceTree = "<group>"; };
+		A7640C171E826FD200F96302 /* RealLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealLife.swift; sourceTree = "<group>"; };
+		A7640C181E826FD200F96302 /* RealLifeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealLifeObject.swift; sourceTree = "<group>"; };
+		A7640C1B1E826FD200F96302 /* singleLessonMarksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = singleLessonMarksTableViewCell.swift; sourceTree = "<group>"; };
+		A7640C1C1E826FD200F96302 /* Solution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		A7640C1D1E826FD200F96302 /* SolutionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolutionObject.swift; sourceTree = "<group>"; };
+		A7640C1E1E826FD200F96302 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		A7640C1F1E826FD200F96302 /* StudentLessonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLessonsViewController.swift; sourceTree = "<group>"; };
+		A7640C201E826FD200F96302 /* StudentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentObjects.swift; sourceTree = "<group>"; };
+		A7640C211E826FD200F96302 /* StudentProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentProfileViewController.swift; sourceTree = "<group>"; };
+		A7640C221E826FD200F96302 /* StudentQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentQuestionsViewController.swift; sourceTree = "<group>"; };
+		A7640C231E826FD200F96302 /* StudentSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentSettingsViewController.swift; sourceTree = "<group>"; };
+		A7640C241E826FD200F96302 /* StudentSingleLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentSingleLessonViewController.swift; sourceTree = "<group>"; };
+		A7640C251E826FD200F96302 /* StudentSubmitHWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentSubmitHWViewController.swift; sourceTree = "<group>"; };
+		A7640C261E826FD200F96302 /* StudnetLessonsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudnetLessonsTableViewCell.swift; sourceTree = "<group>"; };
+		A7640C271E826FD200F96302 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		A7640C291E826FD200F96302 /* TeacherGroupsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherGroupsTableViewCell.swift; sourceTree = "<group>"; };
+		A7640C2A1E826FD200F96302 /* TeacherGroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherGroupsViewController.swift; sourceTree = "<group>"; };
+		A7640C2B1E826FD200F96302 /* TeacherLessonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherLessonsViewController.swift; sourceTree = "<group>"; };
+		A7640C2C1E826FD200F96302 /* TeacherLessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherLessonTableViewCell.swift; sourceTree = "<group>"; };
+		A7640C2D1E826FD200F96302 /* TeacherNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherNotesViewController.swift; sourceTree = "<group>"; };
+		A7640C2E1E826FD200F96302 /* TeacherObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherObject.swift; sourceTree = "<group>"; };
+		A7640C2F1E826FD200F96302 /* TeacherProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherProfileViewController.swift; sourceTree = "<group>"; };
+		A7640C301E826FD200F96302 /* TeacherSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSettingViewController.swift; sourceTree = "<group>"; };
+		A7640C311E826FD200F96302 /* TeacherSingleGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSingleGroupViewController.swift; sourceTree = "<group>"; };
+		A7640C321E826FD200F96302 /* teacherSingleLessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = teacherSingleLessonTableViewCell.swift; sourceTree = "<group>"; };
+		A7640C341E826FD200F96302 /* TeacherSingleLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSingleLessonViewController.swift; sourceTree = "<group>"; };
+		A7640C351E826FD200F96302 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		A7AB28071EC402B5003586CD /* launchscreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = launchscreen.gif; sourceTree = "<group>"; };
+		A7D1B7AB1EC7AB2B00237552 /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionParticle.sks; sourceTree = "<group>"; };
+		A7D1B7AD1EC7ABAC00237552 /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionParticle.sks; sourceTree = "<group>"; };
+		C62B2F0C1EABB41F00ECCD17 /* spacePopOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spacePopOver.swift; sourceTree = "<group>"; };
+		C62B2F0E1EABB46F00ECCD17 /* meshPopOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = meshPopOver.swift; sourceTree = "<group>"; };
+		C62B2F101EABB4B700ECCD17 /* spriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spriteNode.swift; sourceTree = "<group>"; };
+		C62B2F121EABB4F800ECCD17 /* spriteScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spriteScene.swift; sourceTree = "<group>"; };
+		C63242C81FA89DC300EEDA48 /* VuforiaSampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VuforiaSampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		C646E9201E7F0BF500732815 /* moonTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moonTexture.png; path = VuforiaSampleSwift/moonTexture.png; sourceTree = "<group>"; };
+		C646E9221E7F121700732815 /* earthTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = earthTexture.jpg; path = VuforiaSampleSwift/earthTexture.jpg; sourceTree = "<group>"; };
+		E821F6B01EAFCEC3003395B4 /* 8235.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8235.png; sourceTree = "<group>"; };
+		E82E11B61E82A15A00989595 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		E834DC1B1EABD5A5004A0EBA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		E834DC1C1EABD5A5004A0EBA /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		E834DC231EAD4AAA004A0EBA /* StudentHWExerciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentHWExerciesViewController.swift; sourceTree = "<group>"; };
+		E846B7231EC230B600C47E07 /* sceneSetUp2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sceneSetUp2D.swift; sourceTree = "<group>"; };
+		E846B7251EC230DA00C47E07 /* meshGeometry2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = meshGeometry2D.swift; sourceTree = "<group>"; };
+		E846B7271EC2313400C47E07 /* vectorsPopOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vectorsPopOver.swift; sourceTree = "<group>"; };
+		E846B7291EC2316D00C47E07 /* orbiting2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orbiting2D.swift; sourceTree = "<group>"; };
+		E846B72B1EC2319600C47E07 /* drawline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawline.swift; sourceTree = "<group>"; };
+		E846B72D1EC231AE00C47E07 /* vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vector.swift; sourceTree = "<group>"; };
+		E846B72F1EC231C800C47E07 /* vectors2d.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vectors2d.swift; sourceTree = "<group>"; };
+		E846B73B1EC23EA800C47E07 /* bubble2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble2.png; sourceTree = "<group>"; };
+		E846B73C1EC23EA800C47E07 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		E846B73D1EC23EA800C47E07 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		E846B73F1EC23EA800C47E07 /* finalLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finalLevel.swift; sourceTree = "<group>"; };
+		E846B7401EC23EA800C47E07 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		E846B7421EC23EA800C47E07 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E846B7431EC23EA800C47E07 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E846B7441EC23EA800C47E07 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E846B7451EC23EA800C47E07 /* monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster.png; sourceTree = "<group>"; };
+		E846B7461EC23EA800C47E07 /* monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = monster.swift; sourceTree = "<group>"; };
+		E846B7481EC23EA800C47E07 /* nerdStudent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nerdStudent.png; sourceTree = "<group>"; };
+		E846B7491EC23EA800C47E07 /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		E846B74A1EC23EA800C47E07 /* spaceShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceShip.png; sourceTree = "<group>"; };
+		E846B74B1EC23EA800C47E07 /* spacestation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spacestation.png; sourceTree = "<group>"; };
+		E846B74C1EC23EA800C47E07 /* spacestone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spacestone2.png; sourceTree = "<group>"; };
+		E846B74D1EC23EA800C47E07 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		E846B74F1EC23EA800C47E07 /* stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stars.swift; sourceTree = "<group>"; };
+		E846B7501EC23EA800C47E07 /* startGameNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = startGameNode.swift; sourceTree = "<group>"; };
+		E846B7511EC23EA800C47E07 /* stones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stones.swift; sourceTree = "<group>"; };
+		E846B7521EC23EA800C47E07 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		E846B7571EC23EA800C47E07 /* aliveMathGameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aliveMathGameTests.swift; sourceTree = "<group>"; };
+		E846B7581EC23EA800C47E07 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E846B7621EC23EA800C47E07 /* lifeScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = lifeScore.swift; path = ../lifeScore.swift; sourceTree = "<group>"; };
+		E85FF5D51EB7D80000AA07CE /* VuforiaSampleSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VuforiaSampleSwift.entitlements; sourceTree = "<group>"; };
+		E867E08C1E9B7DD700C07C79 /* space.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = space.swift; sourceTree = "<group>"; };
+		E867E08D1E9B7DD700C07C79 /* sceneSetUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sceneSetUp.swift; sourceTree = "<group>"; };
+		E867E08E1E9B7DD800C07C79 /* meshGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = meshGeometry.swift; sourceTree = "<group>"; };
+		E8C02A371EC774B800C45545 /* aliveMathDemo.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = aliveMathDemo.dat; sourceTree = "<group>"; };
+		E8C02A381EC774B800C45545 /* aliveMathDemo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = aliveMathDemo.xml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92AA11021D27A5EB00E56CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926096D41D4163B600510C24 /* SpriteKit.framework in Frameworks */,
+				927B770B1D282E0A00C4F5CC /* MediaPlayer.framework in Frameworks */,
+				E834DC211EABD5CD004A0EBA /* RealmSwift.framework in Frameworks */,
+				927B77091D282DF100C4F5CC /* AudioToolbox.framework in Frameworks */,
+				927B77081D2824AB00C4F5CC /* OpenGLES.framework in Frameworks */,
+				927B76DE1D27FE0500C4F5CC /* CoreMedia.framework in Frameworks */,
+				9239E4601D8A5A7200CD2406 /* libVuforia.a in Frameworks */,
+				927B76DB1D27FDE500C4F5CC /* SceneKit.framework in Frameworks */,
+				927B76DC1D27FDE500C4F5CC /* SystemConfiguration.framework in Frameworks */,
+				927B76D71D27FDC600C4F5CC /* AVFoundation.framework in Frameworks */,
+				927B76D81D27FDC600C4F5CC /* CoreMotion.framework in Frameworks */,
+				E834DC1F1EABD5CD004A0EBA /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9239E3F91D8A5A7200CD2406 /* vuforia-sdk-ios-6-2-9 */ = {
+			isa = PBXGroup;
+			children = (
+				9239E3FC1D8A5A7200CD2406 /* build */,
+			);
+			path = "vuforia-sdk-ios-6-2-9";
+			sourceTree = "<group>";
+		};
+		9239E3FC1D8A5A7200CD2406 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				9239E3FD1D8A5A7200CD2406 /* include */,
+				9239E4571D8A5A7200CD2406 /* lib */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		9239E3FD1D8A5A7200CD2406 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9239E3FE1D8A5A7200CD2406 /* Vuforia */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9239E3FE1D8A5A7200CD2406 /* Vuforia */ = {
+			isa = PBXGroup;
+			children = (
+				9239E3FF1D8A5A7200CD2406 /* Area.h */,
+				9239E4001D8A5A7200CD2406 /* Box3D.h */,
+				9239E4011D8A5A7200CD2406 /* CameraCalibration.h */,
+				9239E4021D8A5A7200CD2406 /* CameraDevice.h */,
+				9239E4031D8A5A7200CD2406 /* CameraField.h */,
+				9239E4041D8A5A7200CD2406 /* CustomViewerParameters.h */,
+				9239E4051D8A5A7200CD2406 /* CylinderTarget.h */,
+				9239E4061D8A5A7200CD2406 /* CylinderTargetResult.h */,
+				9239E4071D8A5A7200CD2406 /* DataSet.h */,
+				9239E4081D8A5A7200CD2406 /* Device.h */,
+				9239E4091D8A5A7200CD2406 /* DeviceTrackable.h */,
+				9239E40A1D8A5A7200CD2406 /* DeviceTrackableResult.h */,
+				9239E40B1D8A5A7200CD2406 /* DeviceTracker.h */,
+				9239E40C1D8A5A7200CD2406 /* EyeID.h */,
+				9239E40D1D8A5A7200CD2406 /* EyewearCalibrationProfileManager.h */,
+				9239E40E1D8A5A7200CD2406 /* EyewearCalibrationReading.h */,
+				9239E40F1D8A5A7200CD2406 /* EyewearDevice.h */,
+				9239E4101D8A5A7200CD2406 /* EyewearUserCalibrator.h */,
+				9239E4111D8A5A7200CD2406 /* Frame.h */,
+				9239E4121D8A5A7200CD2406 /* GLRenderer.h */,
+				9239E4131D8A5A7200CD2406 /* HandheldTransformModel.h */,
+				9239E4141D8A5A7200CD2406 /* HeadTransformModel.h */,
+				9239E4151D8A5A7200CD2406 /* Image.h */,
+				9239E4161D8A5A7200CD2406 /* ImageTarget.h */,
+				9239E4171D8A5A7200CD2406 /* ImageTargetBuilder.h */,
+				9239E4181D8A5A7200CD2406 /* ImageTargetResult.h */,
+				9239E4191D8A5A7200CD2406 /* InstanceId.h */,
+				9239E41A1D8A5A7200CD2406 /* Marker.h */,
+				9239E41B1D8A5A7200CD2406 /* MarkerResult.h */,
+				9239E41C1D8A5A7200CD2406 /* MarkerTracker.h */,
+				9239E41D1D8A5A7200CD2406 /* Matrices.h */,
+				9239E41E1D8A5A7200CD2406 /* Mesh.h */,
+				9239E41F1D8A5A7200CD2406 /* MetalRenderer.h */,
+				9239E4201D8A5A7200CD2406 /* MultiTarget.h */,
+				9239E4211D8A5A7200CD2406 /* MultiTargetResult.h */,
+				9239E4221D8A5A7200CD2406 /* NonCopyable.h */,
+				9239E4231D8A5A7200CD2406 /* Obb2D.h */,
+				9239E4241D8A5A7200CD2406 /* Obb3D.h */,
+				9239E4251D8A5A7200CD2406 /* ObjectTarget.h */,
+				9239E4261D8A5A7200CD2406 /* ObjectTargetResult.h */,
+				9239E4271D8A5A7200CD2406 /* ObjectTracker.h */,
+				9239E4281D8A5A7200CD2406 /* Prop.h */,
+				9239E4291D8A5A7200CD2406 /* PropResult.h */,
+				9239E42A1D8A5A7200CD2406 /* Reconstruction.h */,
+				9239E42B1D8A5A7200CD2406 /* ReconstructionFromTarget.h */,
+				9239E42C1D8A5A7200CD2406 /* Rectangle.h */,
+				9239E42D1D8A5A7200CD2406 /* Renderer.h */,
+				9239E42E1D8A5A7200CD2406 /* RenderingPrimitives.h */,
+				9239E42F1D8A5A7200CD2406 /* RotationalDeviceTracker.h */,
+				9239E4301D8A5A7200CD2406 /* SmartTerrainBuilder.h */,
+				9239E4311D8A5A7200CD2406 /* SmartTerrainTrackable.h */,
+				9239E4321D8A5A7200CD2406 /* SmartTerrainTracker.h */,
+				9239E4331D8A5A7200CD2406 /* State.h */,
+				9239E4341D8A5A7200CD2406 /* StateUpdater.h */,
+				9239E4351D8A5A7200CD2406 /* Surface.h */,
+				9239E4361D8A5A7200CD2406 /* SurfaceResult.h */,
+				9239E4371D8A5A7200CD2406 /* System.h */,
+				9239E4381D8A5A7200CD2406 /* TargetFinder.h */,
+				9239E4391D8A5A7200CD2406 /* TargetSearchResult.h */,
+				9239E43A1D8A5A7200CD2406 /* TextTracker.h */,
+				9239E43B1D8A5A7200CD2406 /* Tool.h */,
+				9239E43C1D8A5A7200CD2406 /* Trackable.h */,
+				9239E43D1D8A5A7200CD2406 /* TrackableResult.h */,
+				9239E43E1D8A5A7200CD2406 /* TrackableSource.h */,
+				9239E43F1D8A5A7200CD2406 /* Tracker.h */,
+				9239E4401D8A5A7200CD2406 /* TrackerManager.h */,
+				9239E4411D8A5A7200CD2406 /* TransformModel.h */,
+				9239E4421D8A5A7200CD2406 /* Type.h */,
+				9239E4431D8A5A7200CD2406 /* UIGLViewProtocol.h */,
+				9239E4441D8A5A7200CD2406 /* UpdateCallback.h */,
+				9239E4451D8A5A7200CD2406 /* Vectors.h */,
+				9239E4461D8A5A7200CD2406 /* VideoBackgroundConfig.h */,
+				9239E4471D8A5A7200CD2406 /* VideoBackgroundTextureInfo.h */,
+				9239E4481D8A5A7200CD2406 /* VideoMode.h */,
+				9239E4491D8A5A7200CD2406 /* View.h */,
+				9239E44A1D8A5A7200CD2406 /* ViewerParameters.h */,
+				9239E44B1D8A5A7200CD2406 /* ViewerParametersList.h */,
+				9239E44C1D8A5A7200CD2406 /* ViewList.h */,
+				9239E44D1D8A5A7200CD2406 /* VirtualButton.h */,
+				9239E44E1D8A5A7200CD2406 /* VirtualButtonResult.h */,
+				9239E44F1D8A5A7200CD2406 /* Vuforia.h */,
+				9239E4501D8A5A7200CD2406 /* Vuforia_iOS.h */,
+				9239E4511D8A5A7200CD2406 /* VuMarkTarget.h */,
+				9239E4521D8A5A7200CD2406 /* VuMarkTargetResult.h */,
+				9239E4531D8A5A7200CD2406 /* VuMarkTemplate.h */,
+				9239E4541D8A5A7200CD2406 /* Word.h */,
+				9239E4551D8A5A7200CD2406 /* WordList.h */,
+				9239E4561D8A5A7200CD2406 /* WordResult.h */,
+			);
+			path = Vuforia;
+			sourceTree = "<group>";
+		};
+		9239E4571D8A5A7200CD2406 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9239E4581D8A5A7200CD2406 /* arm */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9239E4581D8A5A7200CD2406 /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				9239E4591D8A5A7200CD2406 /* libVuforia.a */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		927B76DF1D27FE5900C4F5CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E834DC1B1EABD5A5004A0EBA /* Realm.framework */,
+				E834DC1C1EABD5A5004A0EBA /* RealmSwift.framework */,
+				926096D31D4163B600510C24 /* SpriteKit.framework */,
+				927B770A1D282E0A00C4F5CC /* MediaPlayer.framework */,
+				927B77071D2824AB00C4F5CC /* OpenGLES.framework */,
+				927B76DD1D27FE0500C4F5CC /* CoreMedia.framework */,
+				927B76D91D27FDE500C4F5CC /* SceneKit.framework */,
+				927B76DA1D27FDE500C4F5CC /* SystemConfiguration.framework */,
+				927B76D31D27FDC600C4F5CC /* AudioToolbox.framework */,
+				927B76D41D27FDC600C4F5CC /* AVFoundation.framework */,
+				927B76D51D27FDC600C4F5CC /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		927B76E31D27FF2300C4F5CC /* VuforiaManager */ = {
+			isa = PBXGroup;
+			children = (
+				927B76E41D2806EF00C4F5CC /* VuforiaEAGLView.h */,
+				927B76E51D2806EF00C4F5CC /* VuforiaEAGLView.mm */,
+				927B76FB1D2816DB00C4F5CC /* VuforiaShaderUtils.h */,
+				927B76FC1D2816DB00C4F5CC /* VuforiaShaderUtils.m */,
+				927B76E61D2806EF00C4F5CC /* VuforiaManager.h */,
+				927B76E71D2806EF00C4F5CC /* VuforiaManager.mm */,
+				927B76E81D2806EF00C4F5CC /* VuforiaObjects.h */,
+				927B76E91D2806EF00C4F5CC /* VuforiaObjects.mm */,
+			);
+			name = VuforiaManager;
+			sourceTree = "<group>";
+		};
+		927B76ED1D28070D00C4F5CC /* VuforiaAssets */ = {
+			isa = PBXGroup;
+			children = (
+				927B76EE1D28070D00C4F5CC /* ImageTargets */,
+			);
+			name = VuforiaAssets;
+			path = "vuforia-sdk-ios-6-2-9/samples";
+			sourceTree = "<group>";
+		};
+		927B76EE1D28070D00C4F5CC /* ImageTargets */ = {
+			isa = PBXGroup;
+			children = (
+				E8C02A371EC774B800C45545 /* aliveMathDemo.dat */,
+				E8C02A381EC774B800C45545 /* aliveMathDemo.xml */,
+			);
+			name = ImageTargets;
+			path = VuforiaAssets/ImageTargets;
+			sourceTree = "<group>";
+		};
+		92AA10FC1D27A5EB00E56CBE = {
+			isa = PBXGroup;
+			children = (
+				A7640C0B1E826FD200F96302 /* Main.storyboard */,
+				A7640BDC1E826FD200F96302 /* LaunchScreen.storyboard */,
+				92AA110F1D27A5EB00E56CBE /* Assets.xcassets */,
+				A7AB28071EC402B5003586CD /* launchscreen.gif */,
+				E846B7311EC23EA800C47E07 /* aliveMathGame */,
+				A7640BDA1E826FD200F96302 /* Learning */,
+				92AA11071D27A5EB00E56CBE /* VuforiaSampleSwift */,
+				927B76DF1D27FE5900C4F5CC /* Frameworks */,
+				92AA11061D27A5EB00E56CBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92AA11061D27A5EB00E56CBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92AA11051D27A5EB00E56CBE /* VuforiaSampleSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92AA11071D27A5EB00E56CBE /* VuforiaSampleSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C63242C81FA89DC300EEDA48 /* VuforiaSampleSwift-Bridging-Header.h */,
+				E85FF5D51EB7D80000AA07CE /* VuforiaSampleSwift.entitlements */,
+				927B76ED1D28070D00C4F5CC /* VuforiaAssets */,
+				927B76E31D27FF2300C4F5CC /* VuforiaManager */,
+				C646E9241E80024000732815 /* textures */,
+				C646E9251E80027300732815 /* classes */,
+				92AA11141D27A5EB00E56CBE /* Info.plist */,
+				92AA11841D27B96300E56CBE /* Localizable.strings */,
+				9239E3F91D8A5A7200CD2406 /* vuforia-sdk-ios-6-2-9 */,
+			);
+			path = VuforiaSampleSwift;
+			sourceTree = "<group>";
+		};
+		A7640BDA1E826FD200F96302 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				E82E11B61E82A15A00989595 /* ARViewController.swift */,
+				A7640C911E82709F00F96302 /* realm */,
+				A7640C8F1E82707700F96302 /* view controllers */,
+				A7640BEB1E826FD200F96302 /* image assets */,
+			);
+			name = Learning;
+			path = "Learning 2/Learning";
+			sourceTree = "<group>";
+		};
+		A7640BEB1E826FD200F96302 /* image assets */ = {
+			isa = PBXGroup;
+			children = (
+				A7640C041E826FD200F96302 /* image1.png */,
+				A7640BEC1E826FD200F96302 /* add hw.jpg */,
+				E821F6B01EAFCEC3003395B4 /* 8235.png */,
+				A7640BED1E826FD200F96302 /* Back_previous_arrow_play_next_stop_pause.png */,
+				A7640BEE1E826FD200F96302 /* badge-512.png */,
+				A7640BEF1E826FD200F96302 /* big-smile-smiley_icon-icons.com_57417.png */,
+				A7640BF01E826FD200F96302 /* capture.png */,
+				A7640BF11E826FD200F96302 /* circle-512.png */,
+				A7640BF21E826FD200F96302 /* class.png */,
+				A7640BF31E826FD200F96302 /* grade hw.png */,
+				A7640BF41E826FD200F96302 /* heart-icon-14.png */,
+				A7640BF51E826FD200F96302 /* heart.png */,
+				A7640BF61E826FD200F96302 /* icon-128.png */,
+				A7640BF71E826FD200F96302 /* images.jpeg */,
+				A7640BF81E826FD200F96302 /* key-icon-17.png */,
+				A7640BF91E826FD200F96302 /* Logout-512.png */,
+				A7640BFA1E826FD200F96302 /* math in our life.png */,
+				A7640BFB1E826FD200F96302 /* Media.xcassets */,
+				A7640BFC1E826FD200F96302 /* my classes.png */,
+				A7640BFD1E826FD200F96302 /* save-download-icon-10.png */,
+				A7640BFE1E826FD200F96302 /* Settings-icon.png */,
+				A7640BFF1E826FD200F96302 /* single student hw submission.png */,
+				A7640C001E826FD200F96302 /* swipe left.png */,
+				A7640C011E826FD200F96302 /* swipe right proofs .png */,
+				A7640C021E826FD200F96302 /* switch to 2d.png */,
+			);
+			path = "image assets";
+			sourceTree = "<group>";
+		};
+		A7640C8F1E82707700F96302 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7640C151E826FD200F96302 /* ProofsViewController.swift */,
+				E834DC231EAD4AAA004A0EBA /* StudentHWExerciesViewController.swift */,
+				A7640C1F1E826FD200F96302 /* StudentLessonsViewController.swift */,
+				A7640C241E826FD200F96302 /* StudentSingleLessonViewController.swift */,
+				A7640C211E826FD200F96302 /* StudentProfileViewController.swift */,
+				A7640C221E826FD200F96302 /* StudentQuestionsViewController.swift */,
+				A7640C231E826FD200F96302 /* StudentSettingsViewController.swift */,
+				A7640C251E826FD200F96302 /* StudentSubmitHWViewController.swift */,
+				A7640C2A1E826FD200F96302 /* TeacherGroupsViewController.swift */,
+				A7640C2B1E826FD200F96302 /* TeacherLessonsViewController.swift */,
+				A7640C2D1E826FD200F96302 /* TeacherNotesViewController.swift */,
+				A7640C2F1E826FD200F96302 /* TeacherProfileViewController.swift */,
+				A7640C301E826FD200F96302 /* TeacherSettingViewController.swift */,
+				A7640C311E826FD200F96302 /* TeacherSingleGroupViewController.swift */,
+				A7640C341E826FD200F96302 /* TeacherSingleLessonViewController.swift */,
+				A7640C351E826FD200F96302 /* VideoViewController.swift */,
+				A7640BDB1E826FD200F96302 /* addHomeworkViewController.swift */,
+				A7640C901E82708300F96302 /* table view cell */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		A7640C901E82708300F96302 /* table view cell */ = {
+			isa = PBXGroup;
+			children = (
+				A7640C141E826FD200F96302 /* ProofsTableViewCell.swift */,
+				A7640C1B1E826FD200F96302 /* singleLessonMarksTableViewCell.swift */,
+				A7640C261E826FD200F96302 /* StudnetLessonsTableViewCell.swift */,
+				A7640C291E826FD200F96302 /* TeacherGroupsTableViewCell.swift */,
+				A7640C2C1E826FD200F96302 /* TeacherLessonTableViewCell.swift */,
+				A7640C321E826FD200F96302 /* teacherSingleLessonTableViewCell.swift */,
+			);
+			name = "table view cell";
+			sourceTree = "<group>";
+		};
+		A7640C911E82709F00F96302 /* realm */ = {
+			isa = PBXGroup;
+			children = (
+				A7640BE01E826FD200F96302 /* Course.swift */,
+				A7640BE21E826FD200F96302 /* Equation.swift */,
+				A7640BE51E826FD200F96302 /* Exercies.swift */,
+				A7640BE71E826FD200F96302 /* Group.swift */,
+				A7640BE91E826FD200F96302 /* Homework.swift */,
+				A7640C071E826FD200F96302 /* Lesson.swift */,
+				A7640C0E1E826FD200F96302 /* Profile.swift */,
+				A7640C101E826FD200F96302 /* Progress.swift */,
+				A7640C121E826FD200F96302 /* Proof.swift */,
+				A7640C171E826FD200F96302 /* RealLife.swift */,
+				A7640C1C1E826FD200F96302 /* Solution.swift */,
+				A7640C1E1E826FD200F96302 /* Student.swift */,
+				A7640C271E826FD200F96302 /* Teacher.swift */,
+				A7640C921E8270B100F96302 /* objects */,
+				A7342CD21EC16AB9000A21BD /* SetUpRealm.swift */,
+			);
+			name = realm;
+			sourceTree = "<group>";
+		};
+		A7640C921E8270B100F96302 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				A7640BE31E826FD200F96302 /* EquationObject.swift */,
+				A7640BE61E826FD200F96302 /* ExerciseObject.swift */,
+				A7640BE81E826FD200F96302 /* GroupObject.swift */,
+				A7640BEA1E826FD200F96302 /* HomeworkObject.swift */,
+				A7640C081E826FD200F96302 /* LessonObject.swift */,
+				A7640C0D1E826FD200F96302 /* PlotObject.swift */,
+				A7640C0F1E826FD200F96302 /* ProfileObject.swift */,
+				A7640C111E826FD200F96302 /* ProgressObject.swift */,
+				A7640C131E826FD200F96302 /* ProofObject.swift */,
+				A7640C181E826FD200F96302 /* RealLifeObject.swift */,
+				A7640C1D1E826FD200F96302 /* SolutionObject.swift */,
+				A7640C201E826FD200F96302 /* StudentObjects.swift */,
+				A7640C2E1E826FD200F96302 /* TeacherObject.swift */,
+				A7640BE11E826FD200F96302 /* CourseObject.swift */,
+			);
+			name = objects;
+			sourceTree = "<group>";
+		};
+		C646E9241E80024000732815 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				C646E9201E7F0BF500732815 /* moonTexture.png */,
+				C646E9221E7F121700732815 /* earthTexture.jpg */,
+			);
+			name = textures;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C646E9251E80027300732815 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				E867E08C1E9B7DD700C07C79 /* space.swift */,
+				E867E08D1E9B7DD700C07C79 /* sceneSetUp.swift */,
+				E867E08E1E9B7DD800C07C79 /* meshGeometry.swift */,
+				92AA110A1D27A5EB00E56CBE /* ViewController.swift */,
+				92AA11081D27A5EB00E56CBE /* AppDelegate.swift */,
+				C62B2F0C1EABB41F00ECCD17 /* spacePopOver.swift */,
+				C62B2F0E1EABB46F00ECCD17 /* meshPopOver.swift */,
+				C62B2F101EABB4B700ECCD17 /* spriteNode.swift */,
+				C62B2F121EABB4F800ECCD17 /* spriteScene.swift */,
+				E846B7231EC230B600C47E07 /* sceneSetUp2D.swift */,
+				E846B7251EC230DA00C47E07 /* meshGeometry2D.swift */,
+				E846B7271EC2313400C47E07 /* vectorsPopOver.swift */,
+				E846B7291EC2316D00C47E07 /* orbiting2D.swift */,
+				E846B72B1EC2319600C47E07 /* drawline.swift */,
+				E846B72D1EC231AE00C47E07 /* vector.swift */,
+				E846B72F1EC231C800C47E07 /* vectors2d.swift */,
+			);
+			name = classes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C6858F101EC37D0B00425BFA /* backgroundObjects */ = {
+			isa = PBXGroup;
+			children = (
+				A7D1B7AB1EC7AB2B00237552 /* ExplosionParticle.sks */,
+				E846B7521EC23EA800C47E07 /* torpedo.mp3 */,
+				E846B73C1EC23EA800C47E07 /* explosion.mp3 */,
+				E846B73D1EC23EA800C47E07 /* Explosion.sks */,
+				E846B7621EC23EA800C47E07 /* lifeScore.swift */,
+				E846B74F1EC23EA800C47E07 /* stars.swift */,
+				E846B7511EC23EA800C47E07 /* stones.swift */,
+				E846B7501EC23EA800C47E07 /* startGameNode.swift */,
+			);
+			name = backgroundObjects;
+			sourceTree = "<group>";
+		};
+		C6858F111EC37D3E00425BFA /* characters */ = {
+			isa = PBXGroup;
+			children = (
+				A7D1B7AD1EC7ABAC00237552 /* ExplosionParticle.sks */,
+				E846B7461EC23EA800C47E07 /* monster.swift */,
+				E846B7491EC23EA800C47E07 /* player.swift */,
+			);
+			name = characters;
+			sourceTree = "<group>";
+		};
+		C6858F121EC37D5D00425BFA /* gameScenes */ = {
+			isa = PBXGroup;
+			children = (
+				E846B73F1EC23EA800C47E07 /* finalLevel.swift */,
+				E846B7421EC23EA800C47E07 /* GameScene.swift */,
+			);
+			name = gameScenes;
+			sourceTree = "<group>";
+		};
+		C6858F131EC37DC200425BFA /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				E846B74A1EC23EA800C47E07 /* spaceShip.png */,
+				E846B74C1EC23EA800C47E07 /* spacestone2.png */,
+				E846B74B1EC23EA800C47E07 /* spacestation.png */,
+				E846B74D1EC23EA800C47E07 /* spark.png */,
+				E846B7481EC23EA800C47E07 /* nerdStudent.png */,
+				E846B7451EC23EA800C47E07 /* monster.png */,
+				E846B7401EC23EA800C47E07 /* fire.png */,
+				E846B73B1EC23EA800C47E07 /* bubble2.png */,
+			);
+			name = textures;
+			sourceTree = "<group>";
+		};
+		E846B7311EC23EA800C47E07 /* aliveMathGame */ = {
+			isa = PBXGroup;
+			children = (
+				A7640C051E826FD200F96302 /* Info.plist */,
+				E846B7331EC23EA800C47E07 /* aliveMathGame */,
+				E846B7561EC23EA800C47E07 /* aliveMathGameTests */,
+				E846B7591EC23EA800C47E07 /* aliveMathGameUITests */,
+			);
+			path = aliveMathGame;
+			sourceTree = "<group>";
+		};
+		E846B7331EC23EA800C47E07 /* aliveMathGame */ = {
+			isa = PBXGroup;
+			children = (
+				C6858F131EC37DC200425BFA /* textures */,
+				E846B7431EC23EA800C47E07 /* GameViewController.swift */,
+				C6858F121EC37D5D00425BFA /* gameScenes */,
+				C6858F111EC37D3E00425BFA /* characters */,
+				C6858F101EC37D0B00425BFA /* backgroundObjects */,
+				E846B7441EC23EA800C47E07 /* Info.plist */,
+			);
+			path = aliveMathGame;
+			sourceTree = "<group>";
+		};
+		E846B7561EC23EA800C47E07 /* aliveMathGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				E846B7571EC23EA800C47E07 /* aliveMathGameTests.swift */,
+				E846B7581EC23EA800C47E07 /* Info.plist */,
+			);
+			path = aliveMathGameTests;
+			sourceTree = "<group>";
+		};
+		E846B7591EC23EA800C47E07 /* aliveMathGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = aliveMathGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92AA11041D27A5EB00E56CBE /* VuforiaSampleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92AA11171D27A5EB00E56CBE /* Build configuration list for PBXNativeTarget "VuforiaSampleSwift" */;
+			buildPhases = (
+				92AA11011D27A5EB00E56CBE /* Sources */,
+				92AA11021D27A5EB00E56CBE /* Frameworks */,
+				92AA11031D27A5EB00E56CBE /* Resources */,
+				E82E11B41E82854100989595 /* Embed Frameworks */,
+				E82E11B51E82855A00989595 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VuforiaSampleSwift;
+			productName = VuforiaSampleSwift;
+			productReference = 92AA11051D27A5EB00E56CBE /* VuforiaSampleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92AA10FD1D27A5EB00E56CBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = SMORE;
+				TargetAttributes = {
+					92AA11041D27A5EB00E56CBE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 87F8UA72LP;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 92AA11001D27A5EB00E56CBE /* Build configuration list for PBXProject "VuforiaSampleSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92AA10FC1D27A5EB00E56CBE;
+			productRefGroup = 92AA11061D27A5EB00E56CBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92AA11041D27A5EB00E56CBE /* VuforiaSampleSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92AA11031D27A5EB00E56CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7640C581E826FD200F96302 /* single student hw submission.png in Resources */,
+				A7640C5A1E826FD200F96302 /* swipe right proofs .png in Resources */,
+				92AA11101D27A5EB00E56CBE /* Assets.xcassets in Resources */,
+				A7640C561E826FD200F96302 /* save-download-icon-10.png in Resources */,
+				E8C02A391EC774B800C45545 /* aliveMathDemo.dat in Resources */,
+				A7640C521E826FD200F96302 /* Logout-512.png in Resources */,
+				E846B77D1EC23EA800C47E07 /* spacestation.png in Resources */,
+				E846B7861EC23EA800C47E07 /* Info.plist in Resources */,
+				A7640C571E826FD200F96302 /* Settings-icon.png in Resources */,
+				A7640C4A1E826FD200F96302 /* circle-512.png in Resources */,
+				A7640C471E826FD200F96302 /* badge-512.png in Resources */,
+				A7640C551E826FD200F96302 /* my classes.png in Resources */,
+				A7640C511E826FD200F96302 /* key-icon-17.png in Resources */,
+				A7640C5C1E826FD200F96302 /* image1.png in Resources */,
+				E846B77E1EC23EA800C47E07 /* spacestone2.png in Resources */,
+				E846B77C1EC23EA800C47E07 /* spaceShip.png in Resources */,
+				C646E9211E7F0BF500732815 /* moonTexture.png in Resources */,
+				A7640C531E826FD200F96302 /* math in our life.png in Resources */,
+				E846B7721EC23EA800C47E07 /* fire.png in Resources */,
+				A7640C541E826FD200F96302 /* Media.xcassets in Resources */,
+				E846B77F1EC23EA800C47E07 /* spark.png in Resources */,
+				E846B76D1EC23EA800C47E07 /* bubble2.png in Resources */,
+				A7640C4F1E826FD200F96302 /* icon-128.png in Resources */,
+				A7640C631E826FD200F96302 /* Main.storyboard in Resources */,
+				A7640C381E826FD200F96302 /* LaunchScreen.storyboard in Resources */,
+				A7D1B7AC1EC7AB2B00237552 /* ExplosionParticle.sks in Resources */,
+				E8C02A3A1EC774B800C45545 /* aliveMathDemo.xml in Resources */,
+				E846B76F1EC23EA800C47E07 /* Explosion.sks in Resources */,
+				C646E9231E7F121700732815 /* earthTexture.jpg in Resources */,
+				A7640C4D1E826FD200F96302 /* heart-icon-14.png in Resources */,
+				A7640C461E826FD200F96302 /* Back_previous_arrow_play_next_stop_pause.png in Resources */,
+				A7640C451E826FD200F96302 /* add hw.jpg in Resources */,
+				A7640C4E1E826FD200F96302 /* heart.png in Resources */,
+				A7AB28081EC402B5003586CD /* launchscreen.gif in Resources */,
+				92AA11851D27B96300E56CBE /* Localizable.strings in Resources */,
+				A7640C5B1E826FD200F96302 /* switch to 2d.png in Resources */,
+				E821F6B11EAFCEC3003395B4 /* 8235.png in Resources */,
+				A7640C591E826FD200F96302 /* swipe left.png in Resources */,
+				E846B7771EC23EA800C47E07 /* monster.png in Resources */,
+				A7640C491E826FD200F96302 /* capture.png in Resources */,
+				A7640C501E826FD200F96302 /* images.jpeg in Resources */,
+				E846B76E1EC23EA800C47E07 /* explosion.mp3 in Resources */,
+				A7640C4B1E826FD200F96302 /* class.png in Resources */,
+				E846B77A1EC23EA800C47E07 /* nerdStudent.png in Resources */,
+				A7640C4C1E826FD200F96302 /* grade hw.png in Resources */,
+				E846B7841EC23EA800C47E07 /* torpedo.mp3 in Resources */,
+				A7640C481E826FD200F96302 /* big-smile-smiley_icon-icons.com_57417.png in Resources */,
+				E846B7761EC23EA800C47E07 /* Info.plist in Resources */,
+				A7640C5D1E826FD200F96302 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E82E11B51E82855A00989595 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92AA11011D27A5EB00E56CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E867E0911E9B7DD800C07C79 /* meshGeometry.swift in Sources */,
+				E846B7711EC23EA800C47E07 /* finalLevel.swift in Sources */,
+				E846B72C1EC2319600C47E07 /* drawline.swift in Sources */,
+				A7640C431E826FD200F96302 /* Homework.swift in Sources */,
+				A7640C851E826FD200F96302 /* TeacherNotesViewController.swift in Sources */,
+				A7640C831E826FD200F96302 /* TeacherLessonsViewController.swift in Sources */,
+				A7640C601E826FD200F96302 /* LessonObject.swift in Sources */,
+				E846B7301EC231C800C47E07 /* vectors2d.swift in Sources */,
+				E846B7751EC23EA800C47E07 /* GameViewController.swift in Sources */,
+				A7640C741E826FD200F96302 /* Solution.swift in Sources */,
+				A7640C8C1E826FD200F96302 /* TeacherSingleLessonViewController.swift in Sources */,
+				E82E11B71E82A15A00989595 /* ARViewController.swift in Sources */,
+				E846B7821EC23EA800C47E07 /* startGameNode.swift in Sources */,
+				A7640C6D1E826FD200F96302 /* ProofsViewController.swift in Sources */,
+				A7640C8A1E826FD200F96302 /* teacherSingleLessonTableViewCell.swift in Sources */,
+				E846B72E1EC231AE00C47E07 /* vector.swift in Sources */,
+				A7640C781E826FD200F96302 /* StudentObjects.swift in Sources */,
+				A7640C3D1E826FD200F96302 /* EquationObject.swift in Sources */,
+				E846B78F1EC23EA800C47E07 /* lifeScore.swift in Sources */,
+				C62B2F111EABB4B700ECCD17 /* spriteNode.swift in Sources */,
+				A7640C661E826FD200F96302 /* Profile.swift in Sources */,
+				A7640C7E1E826FD200F96302 /* StudnetLessonsTableViewCell.swift in Sources */,
+				A7640C411E826FD200F96302 /* Group.swift in Sources */,
+				A7640C7C1E826FD200F96302 /* StudentSingleLessonViewController.swift in Sources */,
+				E867E0901E9B7DD800C07C79 /* sceneSetUp.swift in Sources */,
+				A7640C7D1E826FD200F96302 /* StudentSubmitHWViewController.swift in Sources */,
+				A7640C7F1E826FD200F96302 /* Teacher.swift in Sources */,
+				A7640C371E826FD200F96302 /* addHomeworkViewController.swift in Sources */,
+				E846B72A1EC2316D00C47E07 /* orbiting2D.swift in Sources */,
+				E846B7831EC23EA800C47E07 /* stones.swift in Sources */,
+				A7640C3B1E826FD200F96302 /* CourseObject.swift in Sources */,
+				E846B77B1EC23EA800C47E07 /* player.swift in Sources */,
+				A7342CD31EC16AB9000A21BD /* SetUpRealm.swift in Sources */,
+				A7640C871E826FD200F96302 /* TeacherProfileViewController.swift in Sources */,
+				A7640C881E826FD200F96302 /* TeacherSettingViewController.swift in Sources */,
+				A7640C861E826FD200F96302 /* TeacherObject.swift in Sources */,
+				E846B7261EC230DA00C47E07 /* meshGeometry2D.swift in Sources */,
+				927B76EA1D2806EF00C4F5CC /* VuforiaEAGLView.mm in Sources */,
+				A7640C7A1E826FD200F96302 /* StudentQuestionsViewController.swift in Sources */,
+				A7640C3F1E826FD200F96302 /* Exercies.swift in Sources */,
+				A7640C681E826FD200F96302 /* Progress.swift in Sources */,
+				A7640C6B1E826FD200F96302 /* ProofObject.swift in Sources */,
+				E846B7811EC23EA800C47E07 /* stars.swift in Sources */,
+				A7640C8D1E826FD200F96302 /* VideoViewController.swift in Sources */,
+				E846B7241EC230B600C47E07 /* sceneSetUp2D.swift in Sources */,
+				A7640C701E826FD200F96302 /* RealLifeObject.swift in Sources */,
+				E846B7781EC23EA800C47E07 /* monster.swift in Sources */,
+				E867E08F1E9B7DD800C07C79 /* space.swift in Sources */,
+				A7640C3A1E826FD200F96302 /* Course.swift in Sources */,
+				A7640C6A1E826FD200F96302 /* Proof.swift in Sources */,
+				A7640C691E826FD200F96302 /* ProgressObject.swift in Sources */,
+				C62B2F0F1EABB47000ECCD17 /* meshPopOver.swift in Sources */,
+				A7640C891E826FD200F96302 /* TeacherSingleGroupViewController.swift in Sources */,
+				A7640C821E826FD200F96302 /* TeacherGroupsViewController.swift in Sources */,
+				A7640C6C1E826FD200F96302 /* ProofsTableViewCell.swift in Sources */,
+				927B76FD1D2816DB00C4F5CC /* VuforiaShaderUtils.m in Sources */,
+				A7640C651E826FD200F96302 /* PlotObject.swift in Sources */,
+				A7640C761E826FD200F96302 /* Student.swift in Sources */,
+				A7640C791E826FD200F96302 /* StudentProfileViewController.swift in Sources */,
+				92AA110B1D27A5EB00E56CBE /* ViewController.swift in Sources */,
+				92AA11091D27A5EB00E56CBE /* AppDelegate.swift in Sources */,
+				A7640C771E826FD200F96302 /* StudentLessonsViewController.swift in Sources */,
+				A7640C421E826FD200F96302 /* GroupObject.swift in Sources */,
+				E834DC241EAD4AAA004A0EBA /* StudentHWExerciesViewController.swift in Sources */,
+				927B76EB1D2806EF00C4F5CC /* VuforiaManager.mm in Sources */,
+				A7640C441E826FD200F96302 /* HomeworkObject.swift in Sources */,
+				E846B7741EC23EA800C47E07 /* GameScene.swift in Sources */,
+				A7640C7B1E826FD200F96302 /* StudentSettingsViewController.swift in Sources */,
+				927B76EC1D2806EF00C4F5CC /* VuforiaObjects.mm in Sources */,
+				E846B7851EC23EA800C47E07 /* aliveMathGameTests.swift in Sources */,
+				A7640C731E826FD200F96302 /* singleLessonMarksTableViewCell.swift in Sources */,
+				A7640C811E826FD200F96302 /* TeacherGroupsTableViewCell.swift in Sources */,
+				C62B2F131EABB4F800ECCD17 /* spriteScene.swift in Sources */,
+				A7640C751E826FD200F96302 /* SolutionObject.swift in Sources */,
+				E846B7281EC2313400C47E07 /* vectorsPopOver.swift in Sources */,
+				A7640C841E826FD200F96302 /* TeacherLessonTableViewCell.swift in Sources */,
+				A7640C401E826FD200F96302 /* ExerciseObject.swift in Sources */,
+				A7640C671E826FD200F96302 /* ProfileObject.swift in Sources */,
+				A7640C3C1E826FD200F96302 /* Equation.swift in Sources */,
+				C62B2F0D1EABB41F00ECCD17 /* spacePopOver.swift in Sources */,
+				A7640C5F1E826FD200F96302 /* Lesson.swift in Sources */,
+				A7640C6F1E826FD200F96302 /* RealLife.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7640BDC1E826FD200F96302 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7640BDD1E826FD200F96302 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = "Learning 2/Learning";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92AA11151D27A5EB00E56CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92AA11161D27A5EB00E56CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92AA11181D27A5EB00E56CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 87F8UA72LP;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/misha/Dropbox/GP/VuforiaLearningServer,
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "/Users/misha/Dropbox/GP/VuforiaLearningServer/VuforiaSampleSwift/vuforia-sdk-ios-6-2-9/build/include";
+				INFOPLIST_FILE = VuforiaSampleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/misha/Dropbox/GP/VuforiaLearningServer/VuforiaSampleSwift/vuforia-sdk-ios-6-2-9/build/lib/arm",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smore.alivemath;
+				PRODUCT_NAME = VuforiaSampleSwift;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/misha/Dropbox/GP/VuforiaLearningServer/VuforiaSampleSwift/VuforiaSampleSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		92AA11191D27A5EB00E56CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 87F8UA72LP;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/misha/Dropbox/GP/VuforiaLearningServer,
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "/Users/misha/Dropbox/GP/VuforiaLearningServer/VuforiaSampleSwift/vuforia-sdk-ios-6-2-9/build/include";
+				INFOPLIST_FILE = VuforiaSampleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/misha/Dropbox/GP/VuforiaLearningServer/VuforiaSampleSwift/vuforia-sdk-ios-6-2-9/build/lib/arm",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smore.alivemath;
+				PRODUCT_NAME = VuforiaSampleSwift;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/misha/Dropbox/GP/VuforiaLearningServer/VuforiaSampleSwift/VuforiaSampleSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92AA11001D27A5EB00E56CBE /* Build configuration list for PBXProject "VuforiaSampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92AA11151D27A5EB00E56CBE /* Debug */,
+				92AA11161D27A5EB00E56CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92AA11171D27A5EB00E56CBE /* Build configuration list for PBXNativeTarget "VuforiaSampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92AA11181D27A5EB00E56CBE /* Debug */,
+				92AA11191D27A5EB00E56CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92AA10FD1D27A5EB00E56CBE /* Project object */;
+}
